@@ -1,16 +1,11 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Über mich
+subtitle: Agiler Coach und Coding Architect
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Seit mehr als 15 Jahre bin ich im Bereich der Entwicklung von Webportalen und -applikationen tätig. In dieser Zeit habe ich den Softwareentwicklungsprozess in kleinen wie großen Unternehmen als Administrator, Entwickler, Architekt, Projekt- und Abteilungsleiter kennengelernt. Die dabei gemachten Beobachtungen und Erfahrungen haben mich zur folgenden Überzeugung gebracht:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+> Qualität ist der Schlüssel für eine effiziente und nachhaltige Softwareentwicklung und das beste Mittel hierfür sind Agile Methoden.
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Als Agiler Coach und Coding Architect unterstütze ich Teams und Organisation nach dieser Maxime bei der Verbesserung ihrer Produkte und Prozesse.
