@@ -2,11 +2,29 @@
 layout: page
 title: Agile Dojo
 subtitle: Plan, build and run software the agile way!
+bigimg: /assets/dojo.png
 ---
 
 <div class="main-explain-area jumbotron">
-  <p>Die Folien zu meinem Vortrag auf den Frankfurter Entwickertag sind nun online.</p>
-  <iframe src="//www.slideshare.net/slideshow/embed_code/key/AIJXFhaPDLinAd" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
+  <h2>Neueste Events</h2>
+  <ul class="fa-ul">
+  {% assign events = (site.events | sort: 'event_date') | reverse %}
+  {% for event in events limit: 3 %}
+    {% if event.event_type == "training" %}
+      {% assign icon = 'fa-graduation-cap' %}
+    {% else %}
+      {% assign icon = 'fa-television' %}
+    {% endif %}
+
+    <li>
+      <i class="fa-li fa {{ icon }}"></i>
+      <b>{{ event.event_date | date: "%d.%m.%y" }}</b>
+      <i><a href="{{ event.url }}">{{ event.title }}</a></i>,
+      {{ event.event_name }}
+    </li>
+  {% endfor %}
+  </ul>
+  <a href="{{ site.baseurl }}{% link events.md %}">[mehr]</a>
 </div>
 
 <div class="posts-list">
@@ -23,7 +41,10 @@ subtitle: Plan, build and run software the agile way!
     </a>
 
     <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
+      <i class="fa fa-clock-o"></i> {{ post.date | date: "%B %-d, %Y" }}
+      {% if site.disqus %}
+        <script id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>
+      {% endif %}
     </p>
 
     <div class="post-entry">

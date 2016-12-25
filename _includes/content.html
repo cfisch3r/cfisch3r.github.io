@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        {{ content }}
+      </article>
+
+      {% if page.slideshare_key %}
+        <iframe src="//www.slideshare.net/slideshow/embed_code/key/{{ page.slideshare_key }}" width="100%" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+      {% endif %}
+
+      {% if page.speakerdeck_id %}
+        <script async class="speakerdeck-embed" data-id="{{ page.speakerdeck_id }}" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+        {% endif %}
+
+      <ul class="pager blog-pager">
+        {% if page.previous.url %}
+          <li class="previous">
+            <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous {{ include.type }}</a>
+          </li>
+        {% endif %}
+        {% if page.next.url %}
+          <li class="next">
+            <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next {{ include.type }} &rarr;</a>
+          </li>
+        {% endif %}
+      </ul>
+
+      {% if page.comments %}
+        <div class="disqus-comments">
+          {% include disqus.html %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
