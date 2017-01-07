@@ -1,11 +1,13 @@
 ---
-title: "ISQI Certified Agile TDD"
+title: "iSQI Certified Agile TDD"
 subtitle: ""
 category: "Agile Quality Engineering"
 event_type: training
-event_date: 2017-05-26
+event_date: 2017-04-26
+event_end_date: 2017-04-28
 event_name: "Itemis Training Frankfurt"
 ---
+![CATDD](/certificates/catdd.png)
 
 Ziel der agilen Softwareentwicklung ist es, Software in kurzen Intervallen auszuliefern und so schnell auf Änderungen und Erkenntnisse reagieren zu können. Um dabei eine gleichbleibend hohe Qualität gewährleisten zu können, verknüft die Testgetriebene Entwicklung (TDD) Testfallerstellung und Implementierung in Microiterationen, bei denen in kurzen Abständen die Software immer wieder vollständig getestet wird.
 
@@ -29,20 +31,19 @@ Nach Abschluss des Kurses sind die Teilnehmer in der Lage,
 
 ### Agenda
 
-#### Tag 1 (Clean Code Prinzipien)
-
-- Lesbarer Code durch gute Namensgebung
-- Code Dopplungen entfernen
-- SOLID Design Prinzipien
-- Überblick zu wichtigen Entwurfsmustern
-
-#### Tag 2 (TDD Bootcamp)
+- **Tag 1 (Clean Code Prinzipien)**
+  - Lesbarer Code durch gute Namensgebung
+  - Code Dopplungen entfernen
+  - SOLID Design Prinzipien
+  - Überblick zu wichtigen Entwurfsmustern
+- **Tag 2 (TDD Bootcamp)**  
 Anhand verschiedener Übungen auf Basis des zustandsvalidierenden Testansatzes ("Chicago School") werden der TDD Ablauf und emergentes Design praktiziert. Abschließend erfolgt eine Einführung in die Grundlagen interaktionsbasierter Tests mit Doubles ("London School").
-
-#### Tag 3 (Learning by Doing & Prüfung)
+- **Tag 3 (Learning by Doing & Prüfung)**  
 Die Testgetriebe Entwicklung mit Test Doubles (Mocks, Spies and Stubs) and "Outside-In Development" werden anhand von Coding Katas geübt. Am Nachmittag findet die schriftliche und praktische Prüfung zur Zertifizierung statt.
 
-#### Zertifizierung
-Da die Prüfung neben dem theoretischen Teil auch Programmieraufgaben beinhaltet, sind fundierte Kenntnisse der objektorientierten Programmierung erforderlich.  
-Die Prüfungsdauer beträgt 4,5 Stunden (1h Multiple Choice Test, 3,5h Praktische Prüfung).
+### Zertifizierung
+Das [International Software Quality Institute (iSQI GmbH)](http://isqi.org), mit Hauptsitz in Potsdam (DE) und Niederlassungen in Amstelveen (NL), London (UK) und Boston (USA), zertifiziert weltweit das Know-how von (IT-)Fachkräften. Als Marktführer ist das Institut vielgefragter Ausbildungspartner sowohl für Global Player als auch mittelständische Firmen in über 90 Ländern auf 6 Kontinenten in 10 Sprachen. Drei Viertel der DAX-30-Unternehmen vertrauen auf die Expertise des iSQI. In 2015 nahm das iSQI weltweit mehr als 25.000 Prüfungen ab.  
+
 Der iSQI Prüfungsprozess erfolgt gemäß der ISO/IEC 17024.
+Die Prüfungsdauer beträgt 4,5 Stunden (1h Multiple Choice Test, 3,5h Praktische Prüfung).
+Da die Prüfung neben dem theoretischen Teil auch Programmieraufgaben beinhaltet, sind fundierte Kenntnisse der objektorientierten Programmierung erforderlich.  

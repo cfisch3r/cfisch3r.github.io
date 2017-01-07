@@ -6,7 +6,12 @@ layout: default
 <div class="container">
   <div class="row">
     <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1">
-      <i class="fa fa-calendar"></i> {{ page.event_date | date: "%-d. %B, %Y" }}
+    {% if page.event_end_date %}
+      <i class="fa fa-calendar"></i> {{ page.event_date | date: "%d.%m.%Y" }}
+      - {{ page.event_end_date | date: "%d.%m.%Y" }}
+    {% else %}
+      <i class="fa fa-calendar"></i> {{ page.event_date | date: "%d.%m.%Y" }}
+    {% endif %}
     </div>
     <div class="col-lg-4 col-md-5">
       <i class="fa fa-map-marker"></i> {{ page.event_name }}
