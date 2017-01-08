@@ -39,11 +39,11 @@ Nach Abschluss des Kurses sind die Teilnehmer in der Lage,
 - **Tag 2 (TDD Bootcamp)**  
 Anhand verschiedener Übungen auf Basis des zustandsvalidierenden Testansatzes ("Chicago School") werden der TDD Ablauf und emergentes Design praktiziert. Abschließend erfolgt eine Einführung in die Grundlagen interaktionsbasierter Tests mit Doubles ("London School").
 - **Tag 3 (Learning by Doing & Prüfung)**  
-Die Testgetriebe Entwicklung mit Test Doubles (Mocks, Spies and Stubs) and "Outside-In Development" werden anhand von Coding Katas geübt. Am Nachmittag findet die schriftliche und praktische Prüfung zur Zertifizierung statt.
+Die Testgetriebe Entwicklung mit Test Doubles (Mocks, Spies and Stubs) und "Outside-In Development" werden anhand von Coding Katas geübt. Am Nachmittag findet die schriftliche und praktische Prüfung zur Zertifizierung statt.
 
 ### Zertifizierung
 Das [International Software Quality Institute (iSQI GmbH)](http://isqi.org), mit Hauptsitz in Potsdam (DE) und Niederlassungen in Amstelveen (NL), London (UK) und Boston (USA), zertifiziert weltweit das Know-how von (IT-)Fachkräften. Als Marktführer ist das Institut vielgefragter Ausbildungspartner sowohl für Global Player als auch mittelständische Firmen in über 90 Ländern auf 6 Kontinenten in 10 Sprachen. Drei Viertel der DAX-30-Unternehmen vertrauen auf die Expertise des iSQI. In 2015 nahm das iSQI weltweit mehr als 25.000 Prüfungen ab.  
 
-Der iSQI Prüfungsprozess erfolgt gemäß der ISO/IEC 17024.
+Der iSQI Prüfungsprozess erfolgt gemäß ISO/IEC 17024.
 Die Prüfungsdauer beträgt 4,5 Stunden (1h Multiple Choice Test, 3,5h Praktische Prüfung).
 Da die Prüfung neben dem theoretischen Teil auch Programmieraufgaben beinhaltet, sind fundierte Kenntnisse der objektorientierten Programmierung erforderlich.  

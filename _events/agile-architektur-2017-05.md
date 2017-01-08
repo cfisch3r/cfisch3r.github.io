@@ -22,12 +22,12 @@ Nach Abschluss des Kurses sind die Teilnehmer in der Lage,
 
 ### Inhalte
 
-- **Nichtfunktionale Anforderungen definieren und prüfen**
+- **Nichtfunktionale Anforderungen definieren & prüfen**
   - Anforderungsanalyse mit Hilfe des Qualitätsbaums
   - Verwendung von Qualitätsszenarien
   - Entwicklung eines Qualitätsplans
 
-- **Entscheidungen vorbereiten und treffen**  
+- **Entscheidungen vorbereiten & treffen**  
   - Entscheidungsbedarf identifizieren und priorisieren
   - Architekturalternativen entwickeln und bewerten
   - Entscheidungsvorlagen vorbereiten
@@ -41,4 +41,4 @@ Nach Abschluss des Kurses sind die Teilnehmer in der Lage,
 - **Technische Schulden identifizieren & verwalten**
   - Erfassen und Quantifizieren von Technischen Schulden
   - Bewerten und priorisieren von Schuldengeschichten
-  - Abbau & Prävention
+  - Schuldenabbau & -prävention
