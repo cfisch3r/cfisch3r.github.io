@@ -3,8 +3,8 @@ title: "iSQI Certified Agile TDD"
 subtitle: ""
 category: "Agile Quality Engineering"
 event_type: training
-event_date: 2017-04-26
-event_end_date: 2017-04-28
+event_date: 2017-05-03
+event_end_date: 2017-05-05
 event_name: "Itemis Training Frankfurt"
 ---
 ![CATDD](/certificates/catdd.png)

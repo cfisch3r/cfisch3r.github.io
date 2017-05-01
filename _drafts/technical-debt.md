@@ -24,7 +24,8 @@ Wie man sieht, hat man es ständig mit technischen Schulden zu tun. Man muss als
 Gute Gelegenheit bei Reviews & Retrospektiven. Aber auch beim Code Reviews im Zuge der Definition of Done. Um diese zu sammeln sollten sie in Form einer Schuldengeschichte im Backlog festgehalten werden. Dabei ist wichtig, die Schulden zu quantifizieren, denn nur so kann der PO sie entsprechend einplanen. Wichtige Kriterien sind:
 
 - Behebungskosten
--
+- Betroffene Komponenten
+
 
 ###Schulden priorisieren
 

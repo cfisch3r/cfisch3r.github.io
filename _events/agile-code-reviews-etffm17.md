@@ -5,6 +5,7 @@ category: "Agile Quality Engineering"
 event_type: talk
 event_date: 2017-02-16
 event_name: "Frankfurter Entwicklertag"
+speakerdeck_id: 74e8924bdfef4f2383ae088041c7cbd6
 ---
 Code Reviews sind wie die Steuererklärung; sie können sehr profitabel sein, aber keiner möchte sie gerne machen. Außerdem ist – eine weitere Gemeinsamkeit - den meisten nicht klar, wie man sie effizient und effektiv durchführt.
 Dabei helfen Code Reviews nicht nur, Fehler frühzeitig zu erkennen und damit Schäden und Kosten zu vermeiden. Richtig eingesetzt lassen sich mit dieser Methode ebenso die Konsistenz der Softwarearchitektur und der Knowledge-Transfer im Team deutlich verbessern.
