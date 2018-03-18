@@ -1,5 +1,9 @@
 language: ruby
 rvm:
   - 2.2
-install: gem install jekyll html-proofer
-script: bundle install && bundle exec jekyll build && htmlproofer --assume-extension --url-ignore https://linkedin.com/in/christian-fischer-a89952102 ./_site
+install: 
+  - gem install jekyll html-proofer
+  - bundle install
+script:
+  - chmod +x _scripts/build.sh
+  - _scripts/build.sh
