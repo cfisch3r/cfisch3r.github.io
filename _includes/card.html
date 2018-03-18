@@ -4,7 +4,7 @@
     <h6 class="card-subtitle text-muted">{{ include.subtitle }}</h6>
   </div>
   {% if (include.image) %}
-    {% include image.html file=include.image %}
+    {% include image.html file=include.image alt=include.title %}
   {% endif %}
   <div class="card-block">
     <p class="card-text">{{ include.text }}</p>
