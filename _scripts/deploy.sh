@@ -3,7 +3,7 @@
 if  [[ $TRAVIS_PULL_REQUEST = "false" ]]
 then
     ncftp -u "$USERNAME" -p "$PASSWORD" "$HOST"<<EOF
-    rm -f old_site
+    rm -rf old_site
     mv site old_site
     mkdir site
     quit
