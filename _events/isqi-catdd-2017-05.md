@@ -42,7 +42,7 @@ Anhand verschiedener Übungen auf Basis des zustandsvalidierenden Testansatzes (
 Die Testgetriebe Entwicklung mit Test Doubles (Mocks, Spies and Stubs) und "Outside-In Development" werden anhand von Coding Katas geübt. Am Nachmittag findet die schriftliche und praktische Prüfung zur Zertifizierung statt.
 
 ### Zertifizierung
-Das [International Software Quality Institute (iSQI GmbH)](http://isqi.org), mit Hauptsitz in Potsdam (DE) und Niederlassungen in Amstelveen (NL), London (UK) und Boston (USA), zertifiziert weltweit das Know-how von (IT-)Fachkräften. Als Marktführer ist das Institut vielgefragter Ausbildungspartner sowohl für Global Player als auch mittelständische Firmen in über 90 Ländern auf 6 Kontinenten in 10 Sprachen. Drei Viertel der DAX-30-Unternehmen vertrauen auf die Expertise des iSQI. In 2015 nahm das iSQI weltweit mehr als 25.000 Prüfungen ab.  
+Das [International Software Quality Institute (iSQI GmbH)](https://isqi.org/de/), mit Hauptsitz in Potsdam (DE) und Niederlassungen in Amstelveen (NL), London (UK) und Boston (USA), zertifiziert weltweit das Know-how von (IT-)Fachkräften. Als Marktführer ist das Institut vielgefragter Ausbildungspartner sowohl für Global Player als auch mittelständische Firmen in über 90 Ländern auf 6 Kontinenten in 10 Sprachen. Drei Viertel der DAX-30-Unternehmen vertrauen auf die Expertise des iSQI. In 2015 nahm das iSQI weltweit mehr als 25.000 Prüfungen ab.  
 
 Der iSQI Prüfungsprozess erfolgt gemäß ISO/IEC 17024.
 Die Prüfungsdauer beträgt 4,5 Stunden (1h Multiple Choice Test, 3,5h Praktische Prüfung).
