@@ -14,13 +14,15 @@ Das Prinzip hinter der Testliste ist denkbar einfach. Anstatt einfach drauf los 
 
 <Bild>
 
-Jetzt kann man beginnend mit dem einfachsten Testfall Listenpunkt um Listenpunkt abarbeiten und dadurch in kleinen Schritten den Implementierungscode umsetzen. <Vergleich Bergroute> Dadurch entsteht im optimalen ein FLow, bei dem nur kurze Zeit für die Implementierungsphase benötigt. Nicht selten stösst man währenddessen auf weitere Testfälle. Um den Fokus nicht zu verlieren füge ich sie am Ende der Liste hinzu. Erst wenn ich nach dem Refactoring einen Zyklus abgeschlossen habe, entscheide ich mich, an welcher Position eine Umsetzung sinnvoll ist.
+Jetzt kann man beginnend mit dem einfachsten Testfall Listenpunkt um Listenpunkt abarbeiten und dadurch in kleinen Schritten den Implementierungscode umsetzen. Ich vergleiche dieses Vorgehen gerne mit dem Besteigen eines Berges. Auf dem Gipfel erwartet uns der Produktivcode, der das Problem vollständig löst. Die einzelnen Testfälle sind Etappenziele, die es mir ermöglichen, mich in kleinen, überschaubaren Implementierungsschritten dem Ziel zu nähern. Die Testliste ist somit nicht anderes als eine Bergroute, der ich bis zum Gipfel folgen kann. Wie im richtigen Leben führen meist mehrere Wege zum Ziel. Auch bei der Testliste kann es mir passieren, dass ich plötzlich in eine Situation komme, aus der ich keinen nächsten Testschritt finde, der mit einem überschaubaren Implemetierungsaufwand erfüllbar wäre. In solchen Situationen mache ich die letzten Testfälle so lange rückgängig, bis ich wieder genügend andere Wegoptionen habe und probiere eine andere Route. 
+Nicht selten stösst man währenddessen auf weitere Testfälle. Um den Fokus nicht zu verlieren füge ich sie am Ende der Liste hinzu. Erst wenn ich nach dem Refactoring einen Zyklus abgeschlossen habe, entscheide ich mich, an welcher Position eine Umsetzung sinnvoll ist.
 
+# Benefits dieser Methode
+- frühe Entdeckung von Logikfehlern
+- Nutzung von Expertise anderer
+- Fokussierung
 
-
-Trotz dieser Vorgehensweise kann es vorkommen, dass man an einen Punkt kommt, an dem sich kein geeigneter nächster Testfall findet, der sich mit einem kleinen Implementierungsaufwand erfüllen lässt.   
-
-Tipps:
+# Praxistipps
 - Timebox
 - Als Kommentar im Klassenkopf oder ein einfacher Notizblock und Stift. Meist s
 - Eingabe Ausgabe, gebenenfalls 
@@ -28,11 +30,5 @@ Tipps:
 - Bob Martins Artikel zur Komplexität
 - Versionierung
 
-
-Benefits:
-- frühe Entdeckung von Logikfehlern
-- Nutzung von Expertise anderer
-- Fokussierung
-
-Übungskata:
-Passwort
+# Übungskata
+- Passwort Validator
