@@ -5,6 +5,7 @@ event_type: talk
 event_date: 2018-11-13
 event_end_date: 2018-11-16
 event_name: "Continuous Lifecycle in Mannheim"
+fb-img: /assets/cdc2018.png
 ---
 
 ![image-title-here](/assets/cdc2018.png)
