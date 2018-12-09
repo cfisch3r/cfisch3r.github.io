@@ -92,6 +92,7 @@ defaults:
     values:
       layout: "default"
       show-avatar: true
+      lang: "de"
   - scope:
       path: ""
       type: "events"
