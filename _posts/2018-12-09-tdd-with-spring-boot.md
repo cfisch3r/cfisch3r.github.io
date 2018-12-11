@@ -3,7 +3,7 @@ layout: post
 title: TDD with Spring Boot
 subtitle: Best Practices
 category: "Test Driven Development"
-lang: "en"
+locale: "en_GB"
 ref: "tdd_spring_boot"
 excerpt_separator: <!--more-->
 ---

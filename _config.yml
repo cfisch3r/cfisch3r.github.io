@@ -1,5 +1,6 @@
 # --- General options --- #
-gems: [jekyll-paginate]
+plugins: 
+  - jekyll-paginate-v2
 
 # url is the full website URL
 # baseurl is the website's URL without the hostname
@@ -63,6 +64,18 @@ url-pretty: "agiledojo.de"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
+############################################################
+# Site configuration for the Jekyll 3 Pagination Gem
+# The values here represent the defaults if nothing is set
+pagination:
+  enabled: true  
+  sort_reverse: true
+  # Optional, the default locale to use, omit to disable (depends on a field 'locale' to be specified in the posts, 
+  # in reality this can be any value, suggested are the Microsoft locale-codes (e.g. en_US, en_GB) or simply the ISO-639 language code )
+  locale: 'de_DE' 
+
+############################################################
+
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
 #disqus: "agiledojo-de"
 
@@ -76,7 +89,6 @@ timezone: "Europe/Berlin"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
@@ -92,7 +104,7 @@ defaults:
     values:
       layout: "default"
       show-avatar: true
-      lang: "de"
+      locale: "de_DE"
   - scope:
       path: ""
       type: "events"

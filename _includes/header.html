@@ -63,10 +63,10 @@
 		  {% if include.type == "post" %}
 		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
 		  <br>
-		      {% assign ref_posts = site.posts | where: "ref", page.ref | where_exp: "post", "post.lang != page.lang" %}
+		      {% assign ref_posts = site.posts | where: "ref", page.ref | where_exp: "post", "post.locale != page.locale" %}
 		      {% for ref_post in ref_posts %}
-		        {% assign language = site.data.language[ref_post.lang] %}
-		   <span class="post-meta"><a href="{{ ref_post.url }}"><span class="flag-icon {{ language.flag_css }}" aria-hidden="true"></span> {{ language.switch_label }}</a></span>
+		        {% assign locale = site.data.locale[ref_post.locale] %}
+		   <span class="post-meta"><a href="{{ ref_post.url }}"><span class="flag-icon {{ locale.flag_css }}" aria-hidden="true"></span> {{ locale.switch_label }}</a></span>
 		      {% endfor %}
 		  {% endif %}
         </div>

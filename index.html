@@ -3,6 +3,8 @@ layout: page
 title: Agile Dojo
 subtitle: Plan, build and run software the agile way!
 bigimg: /assets/dojo.png
+pagination: 
+  enabled: true
 ---
 
 <div class="main-explain-area jumbotron">
@@ -12,7 +14,7 @@ bigimg: /assets/dojo.png
 <div class="main-explain-area jumbotron">
   <h2>Neueste Events</h2>
   <ul class="fa-ul">
-  {% assign events = (site.events | sort: 'event_date') | reverse %}
+  {% assign events = site.events | sort: 'event_date' | reverse %}
   {% for event in events limit: 3 %}
     {% if event.event_type == "training" %}
       {% assign icon = 'fa-graduation-cap' %}
@@ -32,8 +34,7 @@ bigimg: /assets/dojo.png
 </div>
 
 <div class="posts-list">
-  {% assign german_posts = paginator.posts | where: "lang", "de" %}
-  {% for post in german_posts%}
+  {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>

@@ -8,7 +8,7 @@ bigimg: /assets/training.jpg
 
 
 <ul class="fa-ul">
-{% assign events = (site.events | sort: 'event_date') | reverse %}
+{% assign events = site.events | sort: 'event_date' | reverse %}
 {% for event in events %}
   {% if event.event_type == "training" %}
     {% assign icon = 'fa-graduation-cap' %}
