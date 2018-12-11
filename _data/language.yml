@@ -1,0 +1,6 @@
+de:
+  flag_css: "flag-icon-de"
+  switch_label: "Deutsche Version"
+en:
+  flag_css: "flag-icon-gb"
+  switch_label: "English Version"
