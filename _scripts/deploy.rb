@@ -29,5 +29,5 @@ class SftpDeployer
 
 end
 
-deployer = SftpDeployer.new("www/htdocs/w00d8526/agiledojo","newsite",ENV['SFTP_HOST'],ENV['SFTP_USER'],ENV['SFTP_PASSWORD'])
+deployer = SftpDeployer.new("www/htdocs/w00d8526/agiledojo","site",ENV['SFTP_HOST'],ENV['SFTP_USER'],ENV['SFTP_PASSWORD'])
 deployer.upload("_site")
