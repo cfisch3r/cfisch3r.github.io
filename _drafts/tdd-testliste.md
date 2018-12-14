@@ -1,34 +1,34 @@
 ---
 layout: post
-title: TDD Benefits
-subtitle: 5 Probleme am Anfang
-category: "Agile Methoden"
+title: Die TDD Testliste
+subtitle: Mit der Routenplanung zum Erfolg
+category: "Test Driven Development"
+ref: tdd_testlist
+fb-img: /assets/tdd_mountain.png
 excerpt_separator: <!--more-->
 ---
 
-Als ich meine ersten Schritte mit TDD gemacht habe, fand ich es besonders schwierig, den geigneten Startpunkt zu finden. Mit welchem Testfall sollte ich beginnen? Meist nahm ich den ersten Test, der mir in den Sinn kam, nur um dann festzustellen, dass ich sehr lange brauchte, um diesen dann grün zu bekommen, weil einfach viel Implementierungscode notwendig war. Doch auch wenn die ersten Zyklen gut von der Hand gingen, fand ich mich ab und an in einer Sackgasse, aus der kein offensichtlicher nächster Testschritt herausführte. Irgendetwas musste ich also falsch machen. Mein Aha-Erlebnis hatte ich dann endlich, als ich das Buch "TDD by example" von Kent Beck las.
-Darin beschreibt er ein Hilfsmittel, das Abhilfe für meine Probleme versprach: Die Testliste.
+Wenn wir ein neues Feature testgetrieben entwickeln, stellt sich als erstes immer die Frage, mit welchen Test wir am besten starten. In Coding Dojos habe ich beobachtet, dass die Teilnehmer meist mit dem ersten Testfall beginnen, der ihnen in den Sinn kommt. Aber ist das auch der beste Einstieg, von dem aus sich die folgenden TDD-Iterationen einfach aufbauen lassen und schließlich zur gewünschten Implementierung führen?
+Um diese Frage zu beantworten und einen guten Implementierungspfad zu finden, kann eine Testliste sehr hilfreich sein.  
+
 <!--more-->
 
-Das Prinzip hinter der Testliste ist denkbar einfach. Anstatt einfach drauf los zu programmieren, befasst man sich zunächst mal mit dem Problem und sammelt zunächst alle Testfälle, die einem in den Sinn kommen. Anschließend sortiert man sie entsprechend ihrer Implementierungskomplexität vom simpel bis aufwändig.
+Kennengelernt habe ich die Testliste als Werkzeug im Buch "TDD by example" von Kent Beck - übrigens ein wirklich sehr empfehlenswerte Lektüre.
+Das grundlegende Prinzip dahinter ist denkbar einfach. Anstatt einfach drauf los zu programmieren, versucht ihr, Euer Problem in Teilprobleme zu zerlegen und formuliert dafür entsprechende Testfälle. Diese bringt Ihr dann anschließend eine Reihenfolge, die die Implementierungsschritte zwischen den Tests möglichst klein werden lässt. Damit erreicht Ihr, dass Eure TDD-Zyklen kurz bleiben und Ihr schnell zum Ziel kommt.
 
-<Bild>
+![Berg mit Route](/assets/tdd_mountain.png)
 
-Jetzt kann man beginnend mit dem einfachsten Testfall Listenpunkt um Listenpunkt abarbeiten und dadurch in kleinen Schritten den Implementierungscode umsetzen. Ich vergleiche dieses Vorgehen gerne mit dem Besteigen eines Berges. Auf dem Gipfel erwartet uns der Produktivcode, der das Problem vollständig löst. Die einzelnen Testfälle sind Etappenziele, die es mir ermöglichen, mich in kleinen, überschaubaren Implementierungsschritten dem Ziel zu nähern. Die Testliste ist somit nicht anderes als eine Bergroute, der ich bis zum Gipfel folgen kann. Wie im richtigen Leben führen meist mehrere Wege zum Ziel. Auch bei der Testliste kann es mir passieren, dass ich plötzlich in eine Situation komme, aus der ich keinen nächsten Testschritt finde, der mit einem überschaubaren Implemetierungsaufwand erfüllbar wäre. In solchen Situationen mache ich die letzten Testfälle so lange rückgängig, bis ich wieder genügend andere Wegoptionen habe und probiere eine andere Route. 
-Nicht selten stösst man währenddessen auf weitere Testfälle. Um den Fokus nicht zu verlieren füge ich sie am Ende der Liste hinzu. Erst wenn ich nach dem Refactoring einen Zyklus abgeschlossen habe, entscheide ich mich, an welcher Position eine Umsetzung sinnvoll ist.
+Ich vergleiche dieses Vorgehen gerne mit dem Besteigen eines Berges. Auf dem Gipfel erwartet uns der Produktivcode, der das Problem vollständig löst. Die einzelnen Testfälle sind Etappenziele, die es mir ermöglichen, mich in kleinen, überschaubaren Implementierungsschritten dem Ziel zu nähern. Die Testliste ist somit nicht anderes als eine Bergroute, der ich bis zum Gipfel folgen kann. Wie im richtigen Leben führen meist mehrere Wege zum Ziel. Auch bei der Testliste kann es mir passieren, dass ich plötzlich in eine Situation komme, aus der ich keinen nächsten Testschritt finde, der mit einem überschaubaren Implemetierungsaufwand erfüllbar wäre. In solchen Situationen mache ich die letzten Testfälle so lange rückgängig, bis ich wieder genügend andere Wegoptionen habe und probiere eine andere Route. 
 
-# Benefits dieser Methode
-- frühe Entdeckung von Logikfehlern
-- Nutzung von Expertise anderer
-- Fokussierung
+Nicht selten stösst man während der Implementierung auf weitere Testfälle. Um den Fokus nicht zu verlieren, füge ich sie erstmal am Ende der Liste hinzu. Erst wenn ich nach dem Refactoring einen Zyklus abgeschlossen habe, entscheide ich dann, an welcher Position eine Umsetzung sinnvoll ist.
 
-# Praxistipps
-- Timebox
-- Als Kommentar im Klassenkopf oder ein einfacher Notizblock und Stift. Meist s
-- Eingabe Ausgabe, gebenenfalls 
-- EInbeziehung im Planning 2
-- Bob Martins Artikel zur Komplexität
-- Versionierung
+## Benefits dieser Methode
+- In der Testliste lassen sich Inkonsistenzen in der Anforderungsbeschreibung zu einem frühen Zeitpunkt finden.
+- Die Testfälle könnt Ihr vorab mit anderen zusammen erstellen (z. B. Product Owner, Entwickler, Stakeholder) und so deren Expertise einfließen lassen.
+- Ergeben sich neue Testfälle, könnt Ihr sie der Liste jederzeit hinzufügen ohne den Fokus auf Eure aktuelle Arbeit zu verlieren.
 
-# Übungskata
-- Passwort Validator
+## Praxistipps
+- Die Testfälle lassen sich hervorragend in einer [3-Amigos-Session](https://www.agilealliance.org/glossary/three-amigos/) gemeinsam mit Product Owner, QA Ingenieur und Entwicklern erarbeiten.
+- Wenn Ihr nach Scrum arbeitet, könnt Ihr Euch in Eurem Planning Meeting einfach eine Timebox pro User Story setzen, in der Ihr gemeinsam Testfälle im Brainstorming sammelt.
+- Die Testliste könnt Ihr wahlweise in einem Kommentarblock in der Testklasse oder aber einfach mit Notizblock und Stift verwalten.
+- Wenn Ihr nach jedem Schritt im TDD-Zyklus Euren Stand im Versionsmanagement comittet, könnt Ihr bequem beliebig viele Schritte in Eurer Testliste zurückgehen, wenn Ihr mal in eine Sackgasse geraten seid oder eine alternative Route ausprobieren möchtet. 
