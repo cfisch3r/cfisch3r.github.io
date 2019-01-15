@@ -81,6 +81,6 @@ Eignet Euch das notwendige Know How an. Dazu gehört sowohl Technologiewissen wi
 Überprüft regelmäßig, ob die von Euch gewählte Herangehensweise funktioniert. Erhebt Metriken wie die Mean Time to Recovery, Bugstatistiken, etc. und legt Verbesserungsmaßnahmen in Euren Retrospektiven fest.
 
 ## Fazit
-Der klassichen Ansatz mit der QA-Phase zwischen Entwicklung und Betrieb kommt in einer agilen Produktentwicklung an seine Grenzen. Um auch bei der Qualitätssicherung das volle Potential eines interdisziplinären Teams ausschöpfen zu können, müssen wir möglichst viele unserer Testaktiviäten entweder in die Entwicklung oder den Betrieb verlagern. Die Unterscheidung zwischen Verifikation und Validierung kann uns dabei helfen.
+Der klassische Ansatz mit der QA-Phase zwischen Entwicklung und Betrieb kommt in einer agilen Produktentwicklung an seine Grenzen. Um auch bei der Qualitätssicherung das volle Potential eines interdisziplinären Teams ausschöpfen zu können, müssen wir möglichst viele unserer Testaktiviäten entweder in die Entwicklung oder den Betrieb verlagern. Die Unterscheidung zwischen Verifikation und Validierung kann uns dabei helfen.
 
 
