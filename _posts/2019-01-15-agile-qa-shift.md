@@ -46,6 +46,7 @@ Doch wie sieht das Ganze nun in Praxis aus?  Um die Verifikationstests erfolgrei
 
 ### Methoden
 * Test Driven Development
+* Test Pyramide
 * Specification by Example
 * Continuous Integration
 * 3-Amigo-Session
@@ -65,7 +66,7 @@ Auf der anderen Seite müssen wir für die Produktvalidierung im Betrieb Metrike
 
 ### Werkzeuge
 * Event- und Logfilemonitoring
-* Siman Army
+* Simian Army
 * Penetration Tests
 
 ## Voraussetzungen
