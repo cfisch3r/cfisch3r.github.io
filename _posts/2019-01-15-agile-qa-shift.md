@@ -61,13 +61,15 @@ Auf der anderen Seite müssen wir für die Produktvalidierung im Betrieb Metrike
 
 ### Methoden
 * A/B-Testing
-* Green/Blue-Deployment
+* Chaos Engineering
 * Feature Toggles
+* Canary Releases
+* Shadowing
 
 ### Werkzeuge
 * Event- und Logfilemonitoring
 * Simian Army
-* Penetration Tests
+* Feature Toggles
 
 ## Voraussetzungen
 Damit Ihr diese Herangehensweise in Eurem Team etablieren könnt, müsst Ihr jedoch die folgenden Punkte sicherstellen. 
