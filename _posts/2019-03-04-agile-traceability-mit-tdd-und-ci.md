@@ -3,7 +3,7 @@ layout: post
 title: Agile Traceability mit TDD und Continuous Integration
 category: "Test Driven Development"
 ref: tracibility
-fb-img: /assets/tracibility.png
+fb-img: /assets/traceability.png
 excerpt_separator: <!--more-->
 ---
 Wenn wir Software entwickeln, ist es unser Ziel, regelmäßig ein Produkt zu liefern, dass alle Anforderungen erfüllt. Um das auch nachzuweisen zu können, bräuchten wir eine Rückverfolgbarkeit zwischen den Quellen einer Anforderung und unseren Liefergegenständen, und zwar in beide Richtungen. Ein weit verbreitetes Werkzeug hierfür ist die Traceability Matrix, die jedoch meist mit einem hohen Pflegeaufwand verknüpft ist, zumindest, wenn man eine einigermaßen hohe Aktualität und Korrektheit erreichen möchte.
