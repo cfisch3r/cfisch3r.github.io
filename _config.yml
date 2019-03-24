@@ -1,5 +1,5 @@
 # --- General options --- #
-plugins: 
+plugins:
   - jekyll-paginate-v2
 
 # url is the full website URL
@@ -16,10 +16,10 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Agile Dojo
+title: agile dojo
 
 # Short description of your site
-description: Plan, build and run software the agile way!
+description: Productivy Practices for Development Teams
 
 # --- Navigation bar options --- #
 
@@ -68,11 +68,11 @@ url-pretty: "agiledojo.de"  # eg. "deanattali.com/beautiful-jekyll"
 # Site configuration for the Jekyll 3 Pagination Gem
 # The values here represent the defaults if nothing is set
 pagination:
-  enabled: true  
+  enabled: true
   sort_reverse: true
-  # Optional, the default locale to use, omit to disable (depends on a field 'locale' to be specified in the posts, 
+  # Optional, the default locale to use, omit to disable (depends on a field 'locale' to be specified in the posts,
   # in reality this can be any value, suggested are the Microsoft locale-codes (e.g. en_US, en_GB) or simply the ISO-639 language code )
-  locale: 'de_DE' 
+  locale: 'de_DE'
 
 ############################################################
 
@@ -92,14 +92,12 @@ permalink: /:year-:month-:day-:title/
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       comments: true  # add comments to all blog posts
-  -
-    scope:
+  - scope:
       path: "" # all files
     values:
       layout: "default"
@@ -111,6 +109,10 @@ defaults:
     values:
       layout: event
       permalink: /events/:title.html
+  - scope:
+      path: "*.rss"
+    values:
+      layout: null
 
 # Exclude these files from production site
 exclude:
@@ -174,3 +176,5 @@ collections:
     output: true
   certificates:
     output: false
+  podcast:
+    output: true

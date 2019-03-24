@@ -1,0 +1,54 @@
+---
+
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xml:lang="{{ site.lang }}">
+	<channel>
+		<atom:link href="{{ site.url }}/podcast.rss" rel="self" type="application/rss+xml" />
+		<title>{{ site.data.podcast.title }}</title>
+		<description>{{ site.description | xml_escape }}</description>
+		<link>{{ site.url }}</link>
+		<language>de-de</language>
+		<managingEditor>{{ site.email }} ({{ site.author }})</managingEditor>
+		<webMaster>{{ site.email }} ({{ site.author }})</webMaster>
+		<copyright>&#xA9; 2015-{{ site.time | date: '%Y' }} {{ site.title }}</copyright>
+		<pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+		<image>
+			<link>{{ site.url }}</link>
+			<url>{{ site.url }}/images/itunes.png</url>
+			<title>{{ site.data.podcast.title }}</title>
+		</image>
+		<itunes:subtitle>{{ site.description | xml_escape }}</itunes:subtitle>
+		<itunes:type>serial</itunes:type>
+		<itunes:author>{{ site.author }}</itunes:author>
+		<itunes:summary>{{ site.data.podcast.summary | xml_escape }}</itunes:summary>
+		<itunes:keywords>{{ site.keywords }}</itunes:keywords>
+		<itunes:owner>
+			<itunes:name>{{ site.author }}</itunes:name>
+			<itunes:email>{{ site.email }}</itunes:email>
+		</itunes:owner>
+		<itunes:image href="{{ site.url }}/assets/podcast/agile_dojo_talks.png" />
+		<itunes:category text="Technology">
+			<itunes:category text="Software How-To" />
+		</itunes:category>
+		<itunes:explicit>no</itunes:explicit>
+		{% assign episodes = site.podcast | sort: 'date' %}
+		{% for episode in episodes %}
+			<item>
+				<title>{{ episode.title | xml_escape }}</title>
+				<itunes:subtitle>{{ episode.subtitle | xml_escape }}</itunes:subtitle>
+				<pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
+				<description>{{ episode.summary | xml_escape }}</description>
+				<guid isPermaLink="true">{{ site.url }}{{ episode.file }}</guid>
+				<enclosure url="{{ site.url }}{{ episode.file }}" length="{{ episode.length }}" type="audio/mpeg"/>
+				<itunes:author>{{ site.author }}</itunes:author>
+				<itunes:summary>{{ episode.summary | xml_escape }}</itunes:summary>
+				<itunes:duration>{{ episode.duration }}</itunes:duration>
+				<itunes:keywords>{{ episode.keywords }}</itunes:keywords>
+				<itunes:image href="{{ site.url }}/images/itunes.png" />
+				<itunes:explicit>no</itunes:explicit>
+			</item>
+		{% endfor %}
+	</channel>
+</rss>
