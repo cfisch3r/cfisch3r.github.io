@@ -63,4 +63,4 @@ Diese Betrachtung solltet Ihr vor dem Hintergrund der folgenden Kriterien für e
 Wenn Ihr diese Analyse zum ersten Mal durchführt, wird es sicherlich eine ganze Reihe von Verbesserungen geben, die Ihr angehen wollt. Ihr solltet diese genau wie andere Maßnahmen auch in Eurem Improvement Backlog sammeln. So könnt Ihr diese dann angemessen priorisieren und im Rahmen der Retrospektiven nachhalten.
 
 ## Fazit
-Mit einem überschaubaren Aufwand - in der Regel dauert ein solcher Workshop zwei Stunden - könnt Ihr in Eurem Team eine gemeinsame Strategie entwickeln, wie Ihr den Dokumentationsanforderungen gerecht werdet, ohne Euch unnötig viel Arbeit zu machen. Und was Ihr einmal so festgehalten habt, lässt sich auch einfacher kontinuierlich anpassen und verbessern.
+Mit einem überschaubaren Aufwand - in der Regel dauert ein solcher Workshop in etwa zwei Stunden - könnt Ihr in Eurem Team eine gemeinsame Strategie entwickeln, wie Ihr den Dokumentationsanforderungen gerecht werdet, ohne Euch unnötig viel Arbeit zu machen. Und was Ihr einmal so festgehalten habt, lässt sich auch einfacher kontinuierlich anpassen und verbessern.
