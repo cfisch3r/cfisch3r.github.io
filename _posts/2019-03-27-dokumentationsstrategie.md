@@ -31,7 +31,7 @@ So können die meisten Betriebsführer wenig mit UML-Diagrammen anfangen, Darste
   Für zahlreiche geläufige Dokumentationstypen gibt es etablierte Standards, wie beispielsweise [ARC42](http://arc42.de) für die Architekturbeschreibung. Diese geben durch ihre Struktur den Autoren eine gute Checkliste und meist auch weitere Hilfestellungen an die Hand.
 
 * _Dokumentationsgeneratoren_  
-  Gerade im Bereich der technischen Dokumentation haben sich Werkzeuge etabliert, die durch die Trennung von Dokumentationserstellung und -präsentation sowohl den Autoren als auch den Lesern eines Dokumentes eine optimale Nutzbarkeit bieten. Beipiele sind hier [AscciiDoc](http://asciidoc.org) und [reStructuredText](http://docutils.sourceforge.net/rst.html).  
+  Gerade im Bereich der technischen Dokumentation haben sich Werkzeuge etabliert, die durch die Trennung von Dokumentationserstellung und -präsentation sowohl den Autoren als auch den Lesern eines Dokumentes eine optimale Nutzbarkeit bieten. Beispiele sind hier [AscciiDoc](http://asciidoc.org) und [reStructuredText](http://docutils.sourceforge.net/rst.html).  
 
 ### Ablageort
 ![Ablageort](/assets/location.png){: style="float: left"} Der Zugang zur Dokumentation sollte für die Leser so einfach wie möglich sein. Idealerweise sind die Inhalte in einer Suchmaschine indiziert und können so schnell gefunden werden. Da sich die Dokumentation meist auf einen genau definierten Softwarestand bezieht, muss der Ablageort eine Versionierbarkeit sowie die Zuordnung zu Releaseständen sicherstellen. Im einfachsten Fall befinden sich die Dokumente bzw. ihre Quelldateien gemeinsam mit der Software im selben VCS-Repository.  
@@ -51,7 +51,7 @@ Als Ergebnis dieser Bestandsaufnahme erhält man eine Übersicht, anhand derer s
 Diese Betrachtung solltet Ihr vor dem Hintergrund der folgenden Kriterien für eine gute Dokumentation durchführen:
 
 * **prägnant**  
-  Niemand liest gerne ein Dokument mit Hunderten von Seiten. Je länger der Text ist, umso geringer ist die Chance, die benötigte Information darin zu finden. Versucht also einen klaren Dokumentationsscope einzuhalten und Euch auf die wesentlichen, nicht offensichtlichen Informationen zu beschränken. So interessiert di meisten Leser einer Architekturbeschreibung, welche Entscheidungen Ihr getroffen habt und weniger die Darstellung von Klassenhierarchien, die sie sich selbst im Code erzeugen können.
+  Niemand liest gerne ein Dokument mit Hunderten von Seiten. Je länger der Text ist, umso geringer ist die Chance, die benötigte Information darin zu finden. Versucht also einen klaren Dokumentationsscope einzuhalten und Euch auf die wesentlichen, nicht offensichtlichen Informationen zu beschränken. So interessiert die meisten Leser einer Architekturbeschreibung, welche Entscheidungen Ihr getroffen habt und weniger die Darstellung von Klassenhierarchien, die sie sich selbst im Code erzeugen können.
 
 * **aktuell**  
   Dokumentation ist nur dann hilfreich, wenn die Informationen auf dem aktuellen Stand sind. Im schlimmsten Fall können veraltete Inhalte zu falschen Entscheidungen mit gravierenden Folgen führen. Um das zu erreichen, muss die Aktualisierung möglichst zeitgleich zu einer Änderung in der Software erfolgen und durch eine Checkliste in Erinnerung gerufen werden. Dokumentation im VCS-Repository und die Definition of Done sind hier gute Hilfsmittel.
