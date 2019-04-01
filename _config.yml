@@ -177,4 +177,4 @@ collections:
   certificates:
     output: false
   podcast:
-    output: true
+    output: false
