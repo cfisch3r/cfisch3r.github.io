@@ -2,7 +2,7 @@
 layout: page
 title: Über mich
 subtitle: Agile Coach & Coding Architect
-bigimg: /assets/taunus.jpg
+bigimg: /assets/aboutme.png
 ---
 
 ## Agilität = Mindset + Handwerk
