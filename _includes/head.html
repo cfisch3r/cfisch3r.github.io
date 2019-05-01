@@ -42,7 +42,7 @@
       <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
     {% endfor %}
   {% endif %}
-  
+
   {% if layout.googlefonts %}
     {% for font in layout.googlefonts %}
       <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
@@ -50,7 +50,16 @@
   {% endif %}
 
   <!-- Facebook OpenGraph tags -->
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+
+  {% if page.title %}
+    {% assign ogtitle = page.title %}
+    {% if page.subtitle %}
+      {% assign ogtitle = ogtitle | append: " - " | append: page.subtitle %}
+    {% endif %}
+  {% else %}
+    {% assign ogtitle = site.title %}
+  {% endif %}
+  <meta property="og:title" content="{{ ogtitle }}" />
   <meta property="og:type" content="website" />
 
   {% if page.id %}
