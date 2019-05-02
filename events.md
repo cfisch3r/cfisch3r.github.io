@@ -2,7 +2,7 @@
 layout: page
 title: Veranstaltungen
 subtitle: Vorträge & Trainings
-bigimg: /assets/training.jpg
+bigimg: /assets/events.png
 ---
 
 
