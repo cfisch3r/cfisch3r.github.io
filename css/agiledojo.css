@@ -1,3 +1,12 @@
 .media-object {
   max-width: none;
 }
+
+.intro-header.big-img {
+  background: no-repeat top center;
+}
+
+.caption {
+  font-style: normal;
+  text-align: left;
+}

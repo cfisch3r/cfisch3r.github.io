@@ -1,0 +1,15 @@
+
+<div class="thumbnail">
+  {% if (include.image) %}
+    {% include image.html file=include.image alt=include.title %}
+  {% endif %}
+  <div class="caption">
+    <h4>{{ include.title }}</h4>
+    <h6 class="text-muted">{{ include.subtitle }}</h6>
+    <p class="card-text">{{ include.text }}</p>
+    {% if include.button_url %}
+    <p><a href="{{ include.more }}" class="btn btn-primary" role="button">
+    {{include.button_text}}</a></p>
+    {% endif %}
+  </div>
+</div>

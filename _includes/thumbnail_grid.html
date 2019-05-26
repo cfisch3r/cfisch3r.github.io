@@ -1,0 +1,28 @@
+{% for item in include.collection %}
+
+  {% assign index_remainder = forloop.index0 | modulo:2 %}
+
+  {% if index_remainder == 0 %}
+  <div class="row">
+    <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1">
+  {% else %}
+    <div class="col-lg-4 col-md-5">
+  {% endif %}
+
+  {% assign excerpt = item.content | split: site.excerpt_separator %}
+  {% assign image_url = item.image | prepend: "/images/media/" %}
+  {% include thumbnail.html title=item.title subtitle=item.subtitle image=image_url text=excerpt.first button_url=item.url button_text=include.more_text%}
+
+  {% if index_remainder == 1 %}
+  </div>
+  {% endif %}
+
+{% endfor %}
+
+{% assign collection_modulo = forloop.length | modulo: 2%}
+
+{% if collection_modulo == 1 %}
+  </div>
+{% endif %}
+
+</div>
