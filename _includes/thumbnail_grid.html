@@ -13,16 +13,9 @@
   {% assign image_url = item.image | prepend: "/images/media/" %}
   {% include thumbnail.html title=item.title subtitle=item.subtitle image=image_url text=excerpt.first button_url=item.url button_text=include.more_text%}
 
+  </div>
   {% if index_remainder == 1 %}
   </div>
   {% endif %}
 
 {% endfor %}
-
-{% assign collection_modulo = forloop.length | modulo: 2%}
-
-{% if collection_modulo == 1 %}
-  </div>
-{% endif %}
-
-</div>

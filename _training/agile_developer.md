@@ -7,7 +7,7 @@ image: training/agile_developer.png
 
 Dieses Training vermittelt das Handwerkszeug, mit dem Entwicklungsteams effizient und effektiv den Herausforderungen agiler Softwareentwicklung gerecht werden.
 * **Kurze Releasezyklen**, um schnell Nutzerfeedback und den Return on Invest zu gewährleisten
-* **Selbstorganisierte Zusammenarbeit der Experten**, um effizient auf die jeweilige Situation reagieren zu Klassen
+* **Selbstorganisierte Zusammenarbeit der Experten**, um effizient auf die jeweilige Situation reagieren zu können
 * **Nachhaltige Entwicklung**, um mit gleichbleibend hoher Geschwindigkeit neue Produktfeatures ausliefern zu können
 
 <!--more-->
