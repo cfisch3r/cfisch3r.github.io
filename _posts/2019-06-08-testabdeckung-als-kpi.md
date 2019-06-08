@@ -5,6 +5,7 @@ subtitle: sinnvolle Metrik oder Business Theater?
 category: "TDD"
 fb-img: /images/media/posts/testcoverage.png
 ref: test_coverage
+description: "Eignet sich die Messung der Testabdeckung zur Steuerung der Codequalität und damit der Produktivität im Unternehmen?"
 excerpt_separator: <!--more-->
 ---
 
