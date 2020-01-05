@@ -1,16 +1,18 @@
 ---
 layout: post
 title: Unit Tests
-subtitle: FIRST Prinzipien
+subtitle: Better to be FIRST
 category: "TDD"
-fb-img: /images/media/posts/kotlintest.png
-ref: kotlintest_firstimpression
-description: "Meine ersten Eindrücke mit KotlinTest"
+fb-img: /images/media/posts/first_principles.png
+ref: first_principles
+description: "FIRST Prinzipien für Unit Tests"
 ---
 
 Unittests sind das Fundament einer jeden guten Teststrategie und verdienen daher bei der Entwicklung unsere besondere Aufmerksamkeit. Doch worauf kommt es an und was muss ich dafür tun? Ein paar wenige Prinzipien und Praktiken helfen schon, Effizienz und Effektivität zu steigern.  
 
 <!--more-->
+
+![FIRST Principles](/images/stage/posts/first_principles.png)
 
 ## FIRST Prinzipien
 
