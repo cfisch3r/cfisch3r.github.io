@@ -162,5 +162,7 @@ Im Gegensatz zum Junit-Report, bei dem wir lediglich den Methodennamen zur Testb
 
 In den entsprechenden Methoden der Stageklasse können Platzhalter - in diesem Fall `$` - verwendet werden, die dann im Report durch die jeweiligen Parameterwerte ersetzt werden.
 
+Den gesamten Testreport findet Ihr [hier](https://cfisch3r.github.io/gilded-rose-java/).
+
 ## Fazit
-Tests eignen sich nicht nur zur Qualitätssicherung, sondern können auch als [lebende Dokumentation]({% post_url 2020-01-20-living-specification %}) genutzt, bis hin zur Erfüllung von [Tracebility-Anforderungen]({% post_url 2019-03-04-agile-traceability-mit-tdd-und-ci %}) im Projekt. Das JGiven-Framework unterstützt Euch dabei, ohne Aufwand für eine zusätzliche Adapterschicht. Es lässt sich so auch einfach nachträglich in eine bereits bestehende Codebasis integrieren.
+Tests eignen sich nicht nur zur Qualitätssicherung, sondern können auch als lebende Dokumentation genutzt, bis hin zur Erfüllung von [Tracebility-Anforderungen]({% post_url 2019-03-04-agile-traceability-mit-tdd-und-ci %}) im Projekt. Das JGiven-Framework unterstützt Euch dabei, ohne Aufwand für eine zusätzliche Adapterschicht. Es lässt sich so auch einfach nachträglich in eine bereits bestehende Codebasis integrieren.

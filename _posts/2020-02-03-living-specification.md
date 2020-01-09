@@ -8,7 +8,7 @@ ref: living_specification
 description: ""
 excerpt_separator: <!--more-->
 ---
-Wir entwickeln immer umfangreichere und komplexere Software. Gleichzeitig müssen neue Anforderungen schnell evaluiert und integriert werden, ohne dass ungewünschte Nebeneffekte auftauchen oder Nacharbeiten notwendig werden. Glücklich, wer da eine aktuelle und genaue Dokumentation seiner Applikation zur Hand hat. Doch der Aufwand hierfür steht meist in keinem Verhältnis zum Nutzen. Doch das muss nicht!
+Wir entwickeln immer umfangreichere und komplexere Software. Gleichzeitig müssen neue Anforderungen schnell evaluiert und integriert werden, ohne dass ungewünschte Nebeneffekte auftauchen oder Nacharbeiten notwendig werden. Glücklich, wer da eine aktuelle und genaue Dokumentation seiner Applikation zur Hand hat. Doch der Aufwand hierfür steht meist in keinem Verhältnis zum Nutzen. Das muss aber nicht unbedingt so sein!
 Wer ein paar simple Regeln befolgt, kann einfach seine Tests als Dokumentation nutzen.
 
 <!--more-->
@@ -56,6 +56,15 @@ Tests beschreiben, wie sich unsere Software verhalten soll. Um die fachlichen Zu
 
 4. **Dokumentation veröffentlichen**  
 Dokumentation erzeugt nur dann einen Wert, wenn sie auch genutzt wird. Daher ist es essentiell, diese in ihrer aktuellsten Version einfach zugänglich zu machen, so dass wir sie ohne Aufwand jederzeit nutzen können, sei es als Nachschlagewerk in Refinementterminen oder als Referenzen in User Stories. Am einfachsten lässt sich das erreichen, indem wir nach erfolgreichen Testdurchlauf in Zuge unseres Continuous-Delivery/Deployment-Prozesses die Dokumentation generieren und als statische Website veröffentlichen.
+
+## Werkzeuge
+Für Dokumentationszwecke besonders gut eignen sich Frameworks, die aus dem Testcode natürlichsprachliche Reports erzeugen. Junit 5 beispielsweise bietet hierfür besondere [Feature](https://junit.org/junit5/docs/current/user-guide/#writing-tests-display-names) in Form der `@DisplayName`-Annotation und der `DisplayNameGenerator`-Klassen.
+
+Möchte man zusätzlich zum Verhalten auch noch das Nutzungsszenario dokumentieren, bieten sich BDD-Frameworks an, die Spezifikationen in Form des [Gherkin](https://cucumber.io/docs/gherkin/reference/)-Schemas ermöglichen. Ein Beispiel findet Ihr in meinem [Artikel zu JGiven]({% post_url 2020-01-20-simple-bdd-mit-jgiven %}).
+
+Zur Beschreibung des fachlichen Kontextes eignen sich am besten Dokumentenformate, die sich leicht mit Testcode integrieren lassen und mit denselben Werkzeugen wie der Testcode gepflegt werden können. [AsciiDoc](https://asciidoctor.org) ist hier ein guter Kandidat.
+
+Hinweise, wie sich diese Werkzeuge am besten automatisiert zu einer Dokumentation integrieren lassen, findet Ihr auf der exzellenten [Docs-As-Code-Website](https://docs-as-co.de) meines Kollegen Ralph Müller.
 
 ## Fazit
 Eine gute Testabdeckung ist schon die halbe Miete für eine Lebende Spezifikation. Mit etwas Augenmerk auf die oben genannten Richtlinien lässt sich ohne großen Mehraufwand das darin enthaltene Wissen nutzbar machen, egal ob für ein Refinement oder eine [3-Amigo-Session](https://www.agilealliance.org/glossary/three-amigos/).
