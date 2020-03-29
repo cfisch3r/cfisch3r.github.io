@@ -3,7 +3,7 @@ layout: post
 title: Living Specification
 subtitle: Tests als Dokumentation
 category: "TDD"
-fb-img: /images/media/posts/testcoverage.png
+fb-img: /images/media/posts/test_as_doc.png
 ref: living_specification
 description: ""
 excerpt_separator: <!--more-->
