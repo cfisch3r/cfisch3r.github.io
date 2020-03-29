@@ -18,7 +18,7 @@ Vor einigen Jahren arbeitete ich zusammen mit meinem Team an der Weiterentwicklu
 
 ## Konsistenz braucht Dokumentation
 Dieses Problem ist, wie ich feststellen musste, leider kein Einzelfall.
-Denn je länger eine Software entwickelt wird, umso komplexer wird üblicherweise die darin abgebildete Fachlogik. Gerade wenn wir im agilen Umfeld unterwegs sind, wo wir immer wieder in kleinen Schritten die Funktionalität erweitern, ist es wichtig, neue User Storys vor dem Hintergrund des fachlichen Gesamtkontextes betrachten zu können, um die Konsistenz zu bewahren. Unter anderen müssen wir uns immer wieder diese Fragen stellen:
+Denn je länger eine Software entwickelt wird, desto komplexer wird üblicherweise die darin abgebildete Fachlogik. Gerade wenn wir im agilen Umfeld unterwegs sind, wo wir immer wieder in kleinen Schritten die Funktionalität erweitern, ist es wichtig, neue User Storys vor dem Hintergrund des fachlichen Gesamtkontextes betrachten zu können, um die Konsistenz zu bewahren. Unter anderen müssen wir uns immer wieder diese Fragen stellen:
 
 * Stehen die neuen Regeln im Widerspruch zu den bereits bestehenden?
 * Ergeben alle Regeln zusammen ein in sich schlüssiges, fachliches Modell?
@@ -27,7 +27,7 @@ Denn je länger eine Software entwickelt wird, umso komplexer wird üblicherweis
 Um hierauf Antworten finden zu können, brauchen wir eine aktuelle, eindeutige und vollständige Beschreibung des fachlichen Verhaltens unserer Software. Doch woher kommt diese?
 
 ## User Stories sind keine Dokumentation
-Einige Teams, die ich kenne, versuchen das Problem zu lösen, indem sie ihre User Stories - meist in Form von Jira-Tickets - als fachliche Dokumentation nutzen. Es ist aber schwierig, wenn nicht unmöglich, aus dieser Vielzahl einzelner Änderungswünsche ein konsistentes Bild der implementierten Fachlichkeit zusammenzupuzzlen. Um die vollständige Beschreibung einer Funktionalität zu erhalten, bleibt mir meist nichts kein anderer Weg als eine Volltextsuche. Das ist mühselig und birgt die Gefahr, dass ich etwas Wesentliches übersehe, insbesondere, wenn  sich Anforderungen über die Zeit geändert haben und die chronologische Reihenfolge der User Stories ein Rolle spielt.
+Einige Teams, die ich kenne, versuchen das Problem zu lösen, indem sie ihre User Stories - meist in Form von Jira-Tickets - als fachliche Dokumentation nutzen. Es ist aber schwierig, wenn nicht unmöglich, aus dieser Vielzahl einzelner Änderungswünsche ein konsistentes Bild der implementierten Fachlichkeit zusammenzupuzzlen. Um die vollständige Beschreibung einer Funktionalität zu erhalten, bleibt mir meist kein anderer Weg als eine Volltextsuche über alle Tickets. Das ist mühselig und birgt die Gefahr, dass ich etwas Wesentliches übersehe, insbesondere, wenn  sich Anforderungen über die Zeit geändert haben und die chronologische Reihenfolge der User Stories ein Rolle spielt.
 
 ## Tests als Lebende Spezifikation
 Dabei haben wir, wenn wir testgetrieben entwickeln, bereits eine sehr detaillierte Beschreibung unserer Software; unsere Tests sind nämlich nichts anderes als eine lebende Spezifikation des gewünschte Verhalten unserer Software und erfüllen darüber hinaus die [wichtigsten Merkmale einer guten Dokumentation]({% post_url 2019-03-27-dokumentationsstrategie %}).
@@ -39,7 +39,7 @@ aktuell
 : Da Tests zeitgleich mit der Implementierung entstehen, geben sie auch immer den aktuellen Implementierungsstand wieder, egal ob es sich um die Version handelt, die in Produktion läuft oder die, die gerade auf die Abnahme durch den Fachbereich wartet. Außerdem werden durch Test definierte Spezifikationen im Rahmen der CI/CD-Pipeline regelmäßig gegen die Applikation verifiziert.
 
 zugänglich
-: Testreports lassen sich auf einfache Art und Weise automatisiert erzeugen und als statische Webseiten allen Stakeholdern zugänglich machen. Für die Entwickler ist es sogar noch einfacher, da sich die Tests im selben Repository wie der Produktivcode befinden. Über die IDE können die Entwickler so komfortabel in die Dokumentation zugreifen. Mehr noch: Da die Tests den Produktivcode aufrufen, ist es möglich, durch diese Beziehung auf direktem Weg von der Implementierung in die Spezifikation zu wechseln.
+: Testreports lassen sich auf einfache Art und Weise automatisiert erzeugen und als statische Webseiten allen Stakeholdern zugänglich machen. Für die Entwickler ist es sogar noch einfacher, da sich die Tests im selben Repository wie der Produktivcode befinden. Über die IDE können die Entwickler so komfortabel auf die Dokumentation zugreifen. Mehr noch: Da die Tests den Produktivcode aufrufen, ist es möglich, durch diese Beziehung auf direktem Weg von der Implementierung in die Spezifikation zu wechseln.
 
 ## Best Practices
 
