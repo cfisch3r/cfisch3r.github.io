@@ -64,7 +64,7 @@ Möchte man zusätzlich zum Verhalten auch noch das Nutzungsszenario dokumentier
 
 Zur Beschreibung des fachlichen Kontextes eignen sich am besten Dokumentenformate, die sich leicht mit Testcode integrieren lassen und mit denselben Werkzeugen wie der Testcode gepflegt werden können. [AsciiDoc](https://asciidoctor.org) ist hier ein guter Kandidat.
 
-Hinweise, wie sich diese Werkzeuge am besten automatisiert zu einer Dokumentation integrieren lassen, findet Ihr auf der exzellenten [Docs-As-Code-Website](https://docs-as-co.de) meines Kollegen Ralph Müller.
+Hinweise, wie sich diese Werkzeuge am besten automatisiert zu einer Dokumentation integrieren lassen, findet Ihr auf der exzellenten [Docs-As-Code-Website](https://docs-as-co.de) meines Kollegen Ralf D. Müller.
 
 ## Fazit
 Eine gute Testabdeckung ist schon die halbe Miete für eine Lebende Spezifikation. Mit etwas Augenmerk auf die oben genannten Richtlinien lässt sich ohne großen Mehraufwand das darin enthaltene Wissen nutzbar machen, egal ob für ein Refinement oder eine [3-Amigo-Session](https://www.agilealliance.org/glossary/three-amigos/).
