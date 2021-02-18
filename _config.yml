@@ -1,6 +1,7 @@
 # --- General options --- #
 plugins:
   - jekyll-paginate-v2
+  - jekyll-twitter-plugin
 
 # url is the full website URL
 # baseurl is the website's URL without the hostname
@@ -202,6 +203,11 @@ mini_magick:
         resize: "750x420^" # standard imagemagick options - you can chain multiple commands
         gravity: "center"
         extent: "750x420"
+
+    postinline: # Preset name
+      source: images/originals # source directory - change this to whatever you want
+      destination: images/postinline # generated destination directory
+      resize: "750x420^" # standard imagemagick options - you can chain multiple commands
 
 # separates excerpt from rest for post and content
 excerpt_separator: <!--more-->
