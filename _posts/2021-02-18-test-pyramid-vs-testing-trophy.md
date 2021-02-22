@@ -37,7 +37,7 @@ Kent bezieht sich dabei auf ein Zitat von Martin Fowler aus bereits erwähntem [
 
 > If my high level tests are fast, reliable, and cheap to modify - then lower-level tests aren't needed. 
 
-Drei häufig auftretende Probleme von Integrationstests auf höherer Ebene werden hier angesprochen, die sich durch die zunehmende Komplexität im Test Fixture ergeben sind uns dazu nötigen, vornehmlich auf niedrigeren Stufen zu testen:
+Drei häufig auftretende Probleme von Integrationstests auf höherer Ebene werden hier angesprochen, die sich durch die zunehmende Komplexität im Test Fixture ergeben und uns dazu nötigen, vornehmlich auf niedrigeren Stufen zu testen:
 
 - **niedrige Geschwindigkeit** aufgrund längerer Testlaufzeiten
 - **geringere Zuverlässigkeit** durch Nebeneffekte
