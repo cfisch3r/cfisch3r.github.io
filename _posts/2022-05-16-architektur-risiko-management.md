@@ -25,7 +25,7 @@ Während unserer Architekturarbeit stoßen wir immer wieder auf Risiken, zum Bei
 Damit der Product Owner etwas mit dem Risiko anfangen kann, muss dieses durch das Team bewertet werden, zum Beispiel im Rahmen des Refinementtermins. Folgende Kriterien sollten dabei betrachtet werden.
 
 Auswirkung  
-: Risiken sind abstrakt, solange wir nicht die konkreten Folgen für das Unternehmen benennen, wenn sie eintreffen. Das können sowohl finanzielle Konsequenzen sein, aber auch immaterielle wie der Vertrauensverlust der Nutzer.
+: Risiken sind abstrakt, solange wir nicht die konkreten Folgen für das Unternehmen benennen, wenn sie eintreten. Das können sowohl finanzielle Konsequenzen sein, aber auch immaterielle wie der Vertrauensverlust der Nutzer.
 
 Wahrscheinlichkeit  
 : Meist ist es schwierig, eine genaue Eintrittswahrscheinlichkeit des Risikos zu ermitteln, weil in der Regel Erfahrungswerte fehlen. Daher bleibt oft nichts anderes übrig, als eine Schätzung im Team abzugeben. Entscheidend ist aber, zuverlässige Mechanismen parat zu haben, die bemerken, wenn ein Risiko eintritt. So kann man später anhand dieser Daten die Schätzung überprüfen und gegebenenfalls korrigieren.

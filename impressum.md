@@ -3,17 +3,13 @@ layout: page
 title: Impressum
 ---
 ## Angaben gemäß § 5 TMG
-Christian Fischer\\
-Spießfeldstraße 25C\\
-61381 Friedrichsdorf
+Christian Fischer
 
 ## Kontakt
 christian(at)agiledojo.de
 
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
-Christian Fischer\\
-Spießfeldstraße 25C\\
-61381 Friedrichsdorf
+Christian Fischer
 
 ## Haftungsausschluss
 
