@@ -30,7 +30,6 @@ navbar-links:
   About Me: "aboutme"
   Training: "training"
   Events: "events"
-  Podcast: "podcast"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -183,8 +182,6 @@ collections:
   events:
     output: true
   certificates:
-    output: false
-  podcast:
     output: false
   training:
     output: true
