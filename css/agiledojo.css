@@ -10,3 +10,7 @@
   font-style: normal;
   text-align: left;
 }
+
+.admonition-tip {
+  background-color: #212121;
+} 

@@ -23,6 +23,7 @@ Developers are good at jumping straight into solution space when we hear about a
 > - Make it short: 3-5 sentences should be sufficient.
 > - Explain the need for a decision: Why can't we wait any longer?
 > - Don't tell the history: Nobody cares about why the problem came up. You are here to find a solution and not the culprit.
+{.admonition-tip}
 
 ### You can't always get what you want
 
