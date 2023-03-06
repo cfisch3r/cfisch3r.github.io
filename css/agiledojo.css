@@ -13,17 +13,20 @@
 
 blockquote.admonition-tip {
   background-color: #ffff99;
+  color: #000000;
+  border-left: 0px;
   font-style: normal;
 }
 
 blockquote.admonition-tip h1 {
-  position: absolute;
-  left:20px; 
+  margin-left: 15px;
+  font-size: inherit; 
 } 
 
 blockquote.admonition-tip h1::before {
   content: url("./icons/fire-flame-curved-solid.svg");
   position: absolute;
+  left: 55px;
   width: 10px;
   height: 10px;
 } 
