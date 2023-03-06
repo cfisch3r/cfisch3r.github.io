@@ -39,10 +39,10 @@ To make solution alternatives comparable you need to evaluate them against a lis
 To make a criterion more tangible you can add a scenario decribing how it manifests in the context of your problem.
 
 > # Example
-> ## Criteria: Steep learning curve
+> _Criteria: Steep learning curve_  
 > The new Framework should be easily adaptable by developers.
-> ### Scenario
-> *After a 2-hour introduction workshop, a developer can write a simple REST Service.*
+> *Scenario:*  
+> After a 2-hour introduction workshop, a developer can write a simple REST Service.
 {: .admonition .example}
 
 ### So many choices 

@@ -19,14 +19,14 @@ blockquote.admonition {
 }
 
 blockquote.admonition h1 {
-  margin-left: 35px;
+  margin-left: 20px;
   font-size: inherit; 
 } 
 
 blockquote.admonition.tip h1::before {
   content: url("./icons/fire-flame-curved-solid.svg");
   position: absolute;
-  left: 55px;
+  left: 40px;
   width: 10px;
   height: 10px;
 } 
@@ -34,7 +34,7 @@ blockquote.admonition.tip h1::before {
 blockquote.admonition.example h1::before {
   content: url("./icons/list-solid.svg");
   position: absolute;
-  left: 55px;
+  left: 40px;
   width: 10px;
   height: 10px;
 } 
