@@ -13,4 +13,12 @@
 
 .admonition-tip {
   background-color: #212121;
+}
+.admonition-tip::before {
+  content: url("assets/icons/font-awesome/fire-flame-curved/solid.svg")
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
 } 
