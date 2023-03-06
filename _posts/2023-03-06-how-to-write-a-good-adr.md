@@ -6,7 +6,6 @@ category: "Software Architecture"
 fb-img: /images/media/posts/rewind.png
 ref: write_an_adr
 description: „The process of writing an ADR explained.“
-excerpt_separator: <!--more-->
 ---
 
 [Architecture Decision Records](https://github.com/joelparkerhenderson/architecture-decision-record) (ADRs) are not only a great way to keep track of the choices you make while evolving your product architecture. It can also guides you and your team through the decision process when you face new architectural challenges. Basically, it is a 5-step process.
@@ -19,6 +18,7 @@ Let's have a closer look at each task.
 
 Developers are good at jumping straight into solution space when we hear about a problem. Taking your time and writing a clear and precise **problem statement** makes sure that everyone involved in the decision process has the same understanding of the subject at hand. It also defines what is in and, even more importantly, what is out of scope. Last but not least it should explain the consequences of the decision and the reason for making it right now. 
 
+> #Tip
 > - Make it short: 3-5 sentences should be sufficient.
 > - Explain the need for a decision: Why can't we wait any longer?
 > - Don't tell the history: Nobody cares about why the problem came up. You are here to find a solution and not the culprit.

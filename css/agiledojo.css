@@ -16,11 +16,14 @@ blockquote.admonition-tip {
   font-style: normal;
 }
 
-blockquote.admonition-tip::before {
+blockquote.admonition-tip h1 {
+  position: absolute;
+  left:20px; 
+} 
+
+blockquote.admonition-tip h1::before {
   content: url("./icons/fire-flame-curved-solid.svg");
   position: absolute;
-  top: 0;
-  left: 0;
   width: 10px;
   height: 10px;
 } 
