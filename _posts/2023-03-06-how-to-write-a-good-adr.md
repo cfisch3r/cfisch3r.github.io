@@ -1,4 +1,4 @@
-—
+——
 layout: post
 title: How to write an Architecture Decision Record
 subtitle: The ADR process in a nutshell
@@ -7,9 +7,11 @@ fb-img: /images/media/posts/rewind.png
 ref: write_an_adr
 description: „The process of writing an ADR explained.“
 excerpt_separator: <!—more—>
-—
+——
 
 [Architecture Decision Records](https://github.com/joelparkerhenderson/architecture-decision-record) (ADRs) are not only a great way to keep track of the choices you make while evolving your product architecture. It can also guides you and your team through the decision process when you face new architectural challenges. Basically, it is a 5-step process.
+
+<!—more—>
 
 Let's have a closer look at each task.
 
