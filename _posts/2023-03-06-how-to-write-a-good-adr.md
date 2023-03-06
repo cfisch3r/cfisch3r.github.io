@@ -8,7 +8,7 @@ ref: write_an_adr
 description: „The process of writing an ADR explained.“
 ---
 
-[Architecture Decision Records](https://github.com/joelparkerhenderson/architecture-decision-record) (ADRs) are not only a great way to keep track of the choices you make while evolving your product architecture. It can also guides you and your team through the decision process when you face new architectural challenges. 
+[Architecture Decision Records](https://github.com/joelparkerhenderson/architecture-decision-record) (ADRs) are not only a great way to keep track of the choices you make while evolving your product architecture. It also guides you and your team through the decision process when you face new architectural challenges. 
 
 <!--more-->
 
@@ -16,11 +16,11 @@ Basically, it is a 5-step process.
 
 ![ADR Process](/images/postinline/posts/adr-process.png)
 
-Let's have a closer look at each task.
+Let's have a closer look at each of these tasks.
 
 ### What's your problem, dude?
 
-Developers are good at jumping straight into solution space when we hear about a problem. Taking your time and writing a clear and precise **problem statement** makes sure that everyone involved in the decision process has the same understanding of the subject at hand. It also defines what is in and, even more importantly, what is out of scope. Last but not least it should explain the consequences of the decision and the reason for making it right now. 
+Developers are good at jumping straight into solution space when they hear about a problem. Taking your time and writing a clear and precise **problem statement** makes sure that everyone involved in the decision process has the same understanding of the subject at hand. It also defines what is in and, even more importantly, what is out of scope. Last but not least it should explain the consequences of the decision and the reason for making it right now. 
 
 > # Tip
 > - Make it short: 3-5 sentences should be sufficient.
@@ -33,8 +33,8 @@ Developers are good at jumping straight into solution space when we hear about a
 Decisions always occur in a specific organisational and technical context that restricts your solution space. For example, there are compliance policies,  decision deadlines, and budget limits, just to name a few. So make sure you catch all **constraints**, otherwise you might need to revoke your decision later.
 
 > # Tip
-> - ask **all** of your stakeholders for constraints
-> - it should be easy and unambiguous to check an alternative against constraints
+> - Ask **all** of your stakeholders for constraints.
+> - It should be easy and unambiguous to check an alternative against constraints.
 > - if you transcribe constraints from older ADRs check if they are still valid.
 {: .admonition .tip}
 
@@ -44,7 +44,7 @@ To make a criterion more tangible you can add a scenario decribing how it manife
 
 > # Example
 > _Criteria: Steep learning curve_  
-> The new Framework should be easily adaptable by developers.
+> The new framework should be easily adaptable by developers.
 >
 > *Scenario:*  
 > After a 2-hour introduction workshop, a developer can write a simple REST Service.
@@ -62,7 +62,7 @@ Finding a good set of **solution alternatives** on your own can be tricky. By sh
 
 ### Make your choice
 
-When evaluating the different alternatives it can be challenging to find the right moment to decide. There are always aspects which can be researched and spikes to be done. But be aware of the [analysis paralisys](https://en.wikipedia.org/wiki/Analysis_paralysis). You can always revisit your decision. Done is better than perfect.  
+When evaluating the different alternatives it can be challenging to find the right moment to make the **decision**. There are always aspects which can be researched and spikes to be done. But be aware of the [analysis paralisys](https://en.wikipedia.org/wiki/Analysis_paralysis). You can always revisit your decision. Done is better than perfect.  
 
 > # Tip
 > - State your decision in a single sentence to keep the ADR overview brief.
