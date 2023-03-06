@@ -11,10 +11,12 @@
   text-align: left;
 }
 
-.admonition-tip {
+blockquote.admonition-tip {
   background-color: #ffff99;
+  font-style: normal;
 }
-.admonition-tip::before {
+
+blockquote.admonition-tip::before {
   content: url("assets/icons/font-awesome/fire-flame-curved/solid.svg")
   position: absolute;
   top: 0;
