@@ -12,7 +12,7 @@ description: „The process of writing an ADR explained.“
 
 <!--more-->
 
-Basically, it is a 5-step process.
+Basically, it is a process with six steps.
 
 ![ADR Process](/images/postinline/posts/adr-process.png)
 
