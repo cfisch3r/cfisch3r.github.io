@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Event Storming Notation explained
-subtitle: The ADR process in a nutshell
+subtitle: Your process as a sequence of statte transitions
 category: "Domain Driven Design"
-fb-img: /images/media/posts/adr-process.png
+fb-img: /images/media/posts/Event-storming-elements-legend.excalidraw.png
 ref: eventstormingnotation
-description: "Event Storming Notation explaines"
+description: "Event Storming Notation explained"
 ---
 
 In learning about event storming, the hardest part for me was memorizing the order in which the different card types appear along the time line. As a result, I usually carried a cheat sheet like this with me.
@@ -13,6 +13,8 @@ In learning about event storming, the hardest part for me was memorizing the ord
 ![Event Storming Legend](images/postinline/posts/Event-storming-elements-legend.excalidraw.png)
 
 I was bothered by its logic, however. It took me a while to figure out what it was about. I was able to make sense of it only after following the design process step by step for the first time. I would like to share this experience with you in this article by looking at an online shop's order process.
+
+<!--more-->
 
 ## Tell me what happened
 
@@ -54,7 +56,7 @@ Next, the event "shipment started" from our system triggers a process in the ext
 
 ![Event Storming Legend](images/postinline/posts/Event-storming-elements-externalcommand.excalidraw.png)
 
-Last but not least, the event triggers the command "close shipment," which happens automatically, according to our system **policy**: "Every time a shipment is closed, the delivery must also be closed."
+Last but not least, the event triggers the command "close shipment," which happens automatically, according to our system **policy**: "Every time a delivery is completed, the shipment must also be closed."
 
 ![Event Storming Legend](images/postinline/posts/Event-storming-elements-policy.excalidraw.png)
 
