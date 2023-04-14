@@ -44,19 +44,19 @@ It is necessary to create links between these transitions to establish a process
 
 ![Event Storming Legend](/images/postinline/posts/Event-storming-elements-actor.excalidraw.png)
 
-Our next step is to link the "Order placed" event from the first state transition to the "start shipment" event from the second state transition to keep the process running. Once again, this command is sent by an actor, this time by the picker in storage. But how does he know which orders are ready to be shipped? Using the "order placed" events, he needs a list of orders that are ready to be shipped. This data view is called a **read model**.
+Our next step is to link the "Order placed" event from the first state transition to the "start shipment" event from the second state transition to keep the process running. Once again, this command is sent by an actor, this time by the picker in storage. But how does he know which orders are ready to be shipped? Using the "order placed" events, he needs a list of all orders. This data view is called a **read model**.
 
 ![Event Storming Legend](/images/postinline/posts/Event-storming-elements-readmodel.excalidraw.png)
 
-But wait! The picker cannot see if an order has not yet been shipped if the order list has not yet been updated by the event "shipment started". So let's add this dependency to our model.
+But wait! The picker cannot see if an order has not yet been shipped if the order list has not been updated by the event "shipment started". So let's add this dependency to our model.
 
 ![Event Storming Legend](/images/postinline/posts/Event-storming-elements-readmodel-2.excalidraw.png)
 
-Next, the event "shipment started" from our system triggers a process in the external system of the logistics company. The connection is established by sending a command.
+Next, the event "shipment started" from our system triggers a process in the external system of the logistics company. The connection is established by sending the command "start Delivery".
 
 ![Event Storming Legend](/images/postinline/posts/Event-storming-elements-externalcommand.excalidraw.png)
 
-Last but not least, the event triggers the command "close shipment," which happens automatically, according to our system **policy**: "Every time a delivery is completed, the shipment must also be closed."
+Last but not least, the event "Delivery completed" triggers the command "close shipment", which happens automatically, according to our system **policy**: "Every time a delivery is completed, the shipment must also be closed."
 
 ![Event Storming Legend](/images/postinline/posts/Event-storming-elements-policy.excalidraw.png)
 
