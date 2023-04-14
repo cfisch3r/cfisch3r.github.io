@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Event Storming Notation explained
-subtitle: Your process as a sequence of statte transitions
+subtitle: Your process as a sequence of state transitions
 category: "Domain Driven Design"
 fb-img: /images/media/posts/Event-storming-elements-legend.excalidraw.png
 ref: eventstormingnotation
@@ -73,6 +73,6 @@ Event Storming at the Design Level can be divided roughly into two phases. Firs
 
 In the second phase we bridge the gap between these state transitions, choosing between three options.
 
-- a decision, taken by an **actor** based upon a **Read Model** 
+- a decision, taken by an **actor** based on a **Read Model** 
 - a **command**, sent to an external system
 - an automatically evaluated **policy** 
