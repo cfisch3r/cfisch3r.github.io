@@ -30,7 +30,7 @@ As soon as you create a value object, it is confirmed to be valid. You do not ne
 
 ## An Example
 
-In order to illustrate the different approaches I explored, I picked a simple example. A few weeks ago, I bought a kayak to cruise on the Schlei, which inspired me to use a kayak rental service as an example business domain. One of its value objects is the rental period consisting of a start and end date. A valid rental period can be represented as follows:
+In order to illustrate the different approaches I evaluated, I picked a simple example. A few weeks ago, I bought a kayak to cruise on the Schlei, which inspired me to use a kayak rental service as an example business domain. One of its value objects is the rental period consisting of a start and end date. A valid rental period can be represented as follows:
 
 ```json
 {
@@ -64,13 +64,13 @@ val period = RentalPeriod(LocalDate.of(2023,2,4), LocalDate.of(2023,2,6))
 period.start = LocalDate.of(2023,7,8) // compiler error
 ```
 
-But how about self-validation? Currently, we can easily create invalid periods when the start date is after the end date:
+But how about self-validation? Currently, we can easily create invalid periods where the start date is after the end date:
 
 ```kotlin
 val invalidPeriod = RentalPeriod(LocalDate.of(2023,2,6), LocalDate.of(2023,2,2))
 ```
 
-We can prevent this by validating properties when a new instance of the class is created. In Kotlin, you can do this by defining an init block.
+We can prevent this by validating properties when a new instance of the class is created. In Kotlin, you can do this by defining an `init` block.
 
 ```kotlin
 data class RentalPeriod(val start: LocalDate, val end: LocalDate) {  
@@ -139,7 +139,7 @@ data class RentalPeriod(val start: LocalDate, private val numberofWeeks: Int) {
 
 The `numberOfWeeks` is now a private property of the class. This way it is not accessible but can be used for the calculation of the `end`-property.
 
-However, this approach is limited. For example, if we decide that a 4 week rental will have the same end date as a 3 week rental.
+However, this approach is limited. For example, if we decide that a 3 week rental will have the same end date as a 4 week rental.
 
 ```kotlin
 data class RentalPeriod(val start: LocalDate, private val numberofWeeks: Int) {
@@ -156,7 +156,7 @@ data class RentalPeriod(val start: LocalDate, private val numberofWeeks: Int) {
 }
 ```
 
-For both the 3 and the 4 week options, periods with the same start date have the same end date. But since the `equals`-method of a value class is generated based on the properties in its primary constructor, the periods are not equal.
+For both the 3 and the 4 week options, periods with the same start date have the same end date (start date + 4 weeks). But since the `equals`-method of a value class is generated based on the properties in its primary constructor (`start`and `numberOfWeeks`), the periods are not equal.
 
 ```kotlin
 val period1 = RentalPeriod(LocalDate.of(2023,3,4), 3)  
@@ -169,7 +169,7 @@ Therefore, this approach cannot be recommended, and we must come up with a more 
 
 ## Sealed class with private data class
 
-A long [thread]( https://youtrack.jetbrains.com/issue/KT-11914/Confusing-data-class-copy-with-private-constructor) discusses the reasons different suggestions for workarounds. Using a sealed class with abstract properties and a private data subclass is one of the more popular solutions proposed by Mark Slater.
+There is a long [thread]( https://youtrack.jetbrains.com/issue/KT-11914/Confusing-data-class-copy-with-private-constructor) about different approaches to prevent using the copy method as a bypass for the validation in the factory method. Mark Slater proposed using a sealed class with abstract properties and a private data subclass.
 
 ```kotlin
 sealed class RentalPeriod {  
@@ -192,7 +192,7 @@ sealed class RentalPeriod {
 }
 ```
 
-In addition to having quite a bit of boilerplate code, you cannot use the [destructuring feature](https://kotlinlang.org/docs/destructuring-declarations.html) of data classes. Also, the `toString`-Method states the object type as `ReservationData`. 
+In addition to having quite a bit of boilerplate code, you cannot use the [destructuring feature](https://kotlinlang.org/docs/destructuring-declarations.html) of data classes. Also, the `toString`-Method states the object type as `ReservationData`. But there are still other options to evaluate.
 
 ## Inline Value Class
 
@@ -250,5 +250,4 @@ To assist you in finding the best approach for your purpose, I have compiled a t
 | Factory Method  |     N      |        Y         |      Y      |            Y            |
 | Tradeoffs       |            | Boilerplate Code |             |   (yet) experimental    |
 
-
-Multi Field Value Class is my personal favorite, as it clearly identifies its purpose and as soon as Project Valhalla was introduced into the JVM, the mapping becomes very efficient.
+If you need to implement value objects in the future, I hope you find it useful. 
