@@ -39,7 +39,7 @@ In order to illustrate the different approaches I evaluated, I picked a simple
 }
 ```
 
-## Data classes to the rescue
+## Data Class
 
 Having said that, we should look at how we can implement this in Kotlin. Kotlin's data classes are the obvious place to put this type of data structure.
 
