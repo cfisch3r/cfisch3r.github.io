@@ -8,7 +8,7 @@ ref: dddvalueobjectsinkotlin
 description: "DDD Value Objects in Kotlin"
 ---
 
-A new programming language is an exciting experience for me, since it offers the opportunity to find better solutions to common programming problems. As I write back office business applications using Methods and Patterns from the Domain Driven Design, it was a no-brainer that I should focus on these topics first, when I started my transition from Java to Kotlin. Initially, I needed to implement value objects, a concept for modeling business data in tactical DDD. 
+It is exciting for me to learn a new programming language, since it provides me with the opportunity to solve common programming problems more efficiently. In my primary area of work, back office business applications, Domain Driven Design (DDD) is widely used. So, when I switched from Java to Kotlin, I was curious to see how my new main language applies to these patterns . My first step was to learn about implementation alternatives of value objects, a concept for modelling data in DDD.
 
 <!--more-->
 
@@ -47,7 +47,7 @@ Having said that, we should look at how we can implement this in Kotlin. Kotlin'
 data class RentalPeriod(val start: LocalDate, val end: LocalDate)
 ```
 
-Kotlin's data class definitions are really nice because they are simple. All you need to do is list the properties of your value object in the primary constructor. Based on these properties, you get hashcode- and equals-methods that support structural equality right out of the box.
+Kotlin's data class definitions are very concise. All you need to do is list the properties of your value object in the primary constructor. Based on these properties, you get `hashcode`- and `equals`-methods that support structural equality right out of the box.
 
 ```kotlin
 val period1 = RentalPeriod(LocalDate.of(2023,2,4), LocalDate.of(2023,2,6))
@@ -56,7 +56,7 @@ val period2 = RentalPeriod(LocalDate.of(2023,2,4), LocalDate.of(2023,2,6))
 period1 == period2 // true
 ```
 
-The val keyword, used to indicate read-only properties, ensures that instances of this class are immutable.
+The `val` keyword, used to indicate read-only properties, ensures that instances of this class are immutable.
 
 ```kotlin
 val period = RentalPeriod(LocalDate.of(2023,2,4), LocalDate.of(2023,2,6))
@@ -64,7 +64,7 @@ val period = RentalPeriod(LocalDate.of(2023,2,4), LocalDate.of(2023,2,6))
 period.start = LocalDate.of(2023,7,8) // compiler error
 ```
 
-How about self-validation? Currently, we can easily create invalid periods when the start date is after the end date:
+But how about self-validation? Currently, we can easily create invalid periods when the start date is after the end date:
 
 ```kotlin
 val invalidPeriod = RentalPeriod(LocalDate.of(2023,2,6), LocalDate.of(2023,2,2))
@@ -109,7 +109,7 @@ data class RentalPeriod private constructor(val start: LocalDate, val end: Local
 }
 ```
 
-However, there is a catch with the code. Data classes have a public 'copy' method which uses the primary constructor, so we could circumvent the restrictions of the factory method.
+However, there is a catch with the code. Data classes have a public `copy` method which calls the primary constructor directly, so we could circumvent the restrictions of the factory method.
 
 ```kotlin
 // business rule compliant creation
@@ -141,38 +141,35 @@ The `numberOfWeeks` is now a private property of the class. This way it is not 
 
 However, this approach is limited. For example, if we decide that a 4 week rental will have the same end date as a 3 week rental.
 
-For both the 3 and the 4 week options, periods with the same start date have the same end date.
-
 ```kotlin
-
 data class RentalPeriod(val start: LocalDate, private val numberofWeeks: Int) {
 
-	init {
-		require(numberOfWeeks in 1..4)
-	}
+  init {
+	require(numberOfWeeks in 1..4)
+  }
 
-	val end: LocalDate
-			get() = if (numberOfWeeks < 3)
-						start.plusWeeks(numberOfWeeks.toLong())
-					else
-						start.plusWeeks(4L)
+  val end: LocalDate
+		get() = if (numberOfWeeks < 3)
+				  start.plusWeeks(numberOfWeeks.toLong())
+				else
+				  start.plusWeeks(4L)
 }
 ```
 
-But since the `equals`-method of a value class is generated based on the properties in its primary constructor, the periods are not equal.
+For both the 3 and the 4 week options, periods with the same start date have the same end date. But since the `equals`-method of a value class is generated based on the properties in its primary constructor, the periods are not equal.
 
 ```kotlin
 val period1 = RentalPeriod(LocalDate.of(2023,3,4), 3)  
 val period2 = RentalPeriod(LocalDate.of(2023,3,4), 4)  
 
-period1 == period2 // false, although both periods have the same start and end date
+period1 != period2 // true, because equality is based on start date and number of weeks instead of start and end date
 ```
 
 Therefore, this approach cannot be recommended, and we must come up with a more robust solution.
 
-Sealed class with private data class
+## Sealed class with private data class
 
-A long [thread]( https://youtrack.jetbrains.com/issue/KT-11914/Confusing-data-class-copy-with-private-constructor) discusses the reasons behind this language design as well as suggestions for workarounds. Using a sealed class with abstract properties and a private data subclass is one of the more popular solutions proposed by Mark Slater.
+A long [thread]( https://youtrack.jetbrains.com/issue/KT-11914/Confusing-data-class-copy-with-private-constructor) discusses the reasons different suggestions for workarounds. Using a sealed class with abstract properties and a private data subclass is one of the more popular solutions proposed by Mark Slater.
 
 ```kotlin
 sealed class RentalPeriod {  
@@ -195,7 +192,7 @@ sealed class RentalPeriod {
 }
 ```
 
-In addition to having quite a bit of boilerplate code, you cannot use the [destructuring feature] (https://kotlinlang.org/docs/destructuring-declarations.html) of data classes. Also, the `toString`-Method states the object type as `ReservationData`. 
+In addition to having quite a bit of boilerplate code, you cannot use the [destructuring feature](https://kotlinlang.org/docs/destructuring-declarations.html) of data classes. Also, the `toString`-Method states the object type as `ReservationData`. 
 
 ## Inline Value Class
 
@@ -205,20 +202,20 @@ Kotlin introduced inline value classes as wrappers for primitive types. For exam
 @JvmInline
 value class PositiveNumber(val value: Int) {
 
-	init {
+  init {
 	
-		require(value > 0) {"The value $value of a positive Number has to be greater than 0."}
+	require(value > 0) {"The value $value of a positive number has to be greater than 0."}
 	
-	}
+  }
 
 }
 ```
 
-Currently, value classes can hold only single values, so for our rental period we will need a more generic version of value classes: multi field value classes.
+Currently, value classes can hold only single values, so for our rental period we will need a more generic version of value classes: **multi field value classes**.
 
 ## Multi Field Value Class
 
-First of all: At the time of writing this article this feature is in an experimental state. You have to activate it with a compiler flag, for example in your gradle-build-file:
+First of all: At the time of writing this article this feature is in an experimental state. You have to activate it with a compiler flag. Here is an example for an implementation in a Gradle build file:
 
 ```kotlin
 tasks.withType<KotlinCompile> {
@@ -232,14 +229,14 @@ Now you can implement the `RentalPeriod` similar to the single-value variant.
 @JvmInline
 value class RentalPeriod private constructor(val start: LocalDate, val end: LocalDate) {
 
-	companion object {
+  companion object {
 	
-		fun create(start: LocalDate, numberOfWeeks: Int): RentalPeriod {
-			require(numberOfWeeks in 1..4)
-			return RentalPeriod(start, start.plusWeeks(numberOfWeeks.toLong())
-		}
-		
+	fun create(start: LocalDate, numberOfWeeks: Int): RentalPeriod {
+	  require(numberOfWeeks in 1..4)
+	  return RentalPeriod(start, start.plusWeeks(numberOfWeeks.toLong())
 	}
+		
+  }
 }
 ```
 
