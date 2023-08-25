@@ -37,4 +37,12 @@ blockquote.admonition.example h1::before {
   left: 40px;
   width: 10px;
   height: 10px;
-} 
+}
+
+blockquote.admonition.warning h1::before {
+  content: url("./icons/triangle-exclamation-solid.svg");
+  position: absolute;
+  left: 40px;
+  width: 10px;
+  height: 10px;
+}

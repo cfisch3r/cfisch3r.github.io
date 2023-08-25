@@ -88,7 +88,9 @@ The validation is handled by the `require` function from Kotlin's standard libra
 It's all going well, but what if the parameters for creating the value object differ from its properties? For example, let's say we want to allow our customers to rent only on a weekly basis, with a minimum of one week and a maximum of four weeks. The start date and the number of weeks for the rental would be parameters in a factory method that reflects this specification:
 
 ```kotlin
-fun create(start: LocalDate, numberOfWeeks: Int): RentalPeriod = ToDo("Not implemented")
+fun create(start: LocalDate, numberOfWeeks: Int): RentalPeriod {
+    // validation & object creation
+}
 ```
 
 Providing this method in a companion object and limiting access to the constructor could be a simple solution.
@@ -125,7 +127,7 @@ The factory method could be moved to the primary constructor as a simple workaro
 
 ```kotlin
 
-data class RentalPeriod(val start: LocalDate, private val numberofWeeks: Int) {
+data class RentalPeriod(val start: LocalDate, private val numberOfWeeks: Int) {
 
 	init {
 		require(numberOfWeeks in 1..4)
@@ -213,17 +215,8 @@ value class PositiveNumber(val value: Int) {
 
 Currently, value classes can hold only single values, so for our rental period we will need a more generic version of value classes: **multi field value classes**.
 
-## Multi Field Value Class
-
-First of all: At the time of writing this article this feature is in an experimental state. You have to activate it with a compiler flag. Here is an example for an implementation in a Gradle build file:
-
-```kotlin
-tasks.withType<KotlinCompile> {
-    kotlinOptions.freeCompilerArgs += "-Xvalue-classes"
-}
-```
-
-Now you can implement the `RentalPeriod` similar to the single-value variant.
+## The Future: Multi Field Value Class
+A [proposal for Multi Field Value Classes (MFVC)] (https://github.com/zhelenskiy/KEEP/blob/patch-6/proposals/multi-field-value-classes.md) has already been submitted in the Kotlin Evolution and Enhancement Process (KEEP). Using this feature the Rent Period could be defined as follows.
 
 ```kotlin
 @JvmInline
@@ -233,21 +226,25 @@ value class RentalPeriod private constructor(val start: LocalDate, val end: Loca
 	
 	fun create(start: LocalDate, numberOfWeeks: Int): RentalPeriod {
 	  require(numberOfWeeks in 1..4)
-	  return RentalPeriod(start, start.plusWeeks(numberOfWeeks.toLong())
+	  return RentalPeriod(start, start.plusWeeks(numberOfWeeks.toLong()))
 	}
 		
   }
 }
 ```
 
+> # Warning
+> As of the time of writing this article (Kotlin version 1.9.0), there is already an experimental integration of this feature. You can enable it with the compiler flag `-Xvalue-classes`, but the implementation is still problematic when a MFVC has a private constructor. In my code, I receive a backend internal error whenever I assign the factory method's result to a variable. So, it appears that we still need to wait until we can use it in production.
+{: .admonition .warning}
+
 ## Conclusion
 
 To assist you in finding the best approach for your purpose, I have compiled a table that illustrates the key aspects of each approach.
 
-|                 | Data Class |   Sealed Class   | Value Class | Multi Field Value Class |
-| --------------- |:----------:|:----------------:|:-----------:|:-----------------------:|
-| Multiple Fields |     Y      |        Y         |      N      |            Y            |
-| Factory Method  |     N      |        Y         |      Y      |            Y            |
-| Tradeoffs       |            | Boilerplate Code |             |   (yet) experimental    |
+|                        | Data Class |   Sealed Class   | Value Class | Multi Field Value Class |
+|------------------------|:----------:|:----------------:|:-----------:|:-----------------------:|
+| Multiple Fields        |     Y      |        Y         |      N      |            Y            |
+| Factory Method         |     N      |        Y         |      Y      |            Y            |
+| Tradeoffs/Restrictions |            | Boilerplate Code |             | not fully  implemented  |
 
 If you need to implement value objects in the future, I hope you find it useful. 
