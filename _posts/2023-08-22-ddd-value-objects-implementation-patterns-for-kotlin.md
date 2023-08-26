@@ -216,7 +216,7 @@ value class PositiveNumber(val value: Int) {
 Currently, value classes can hold only single values, so for our rental period we will need a more generic version of value classes: **multi field value classes**.
 
 ## The Future: Multi Field Value Class
-A [proposal for Multi Field Value Classes (MFVC)] (https://github.com/zhelenskiy/KEEP/blob/patch-6/proposals/multi-field-value-classes.md) has already been submitted in the Kotlin Evolution and Enhancement Process (KEEP). Using this feature the Rent Period could be defined as follows.
+A [proposal for Multi Field Value Classes (MFVC)](https://github.com/zhelenskiy/KEEP/blob/patch-6/proposals/multi-field-value-classes.md) has already been submitted in the Kotlin Evolution and Enhancement Process (KEEP). Using this feature the Rent Period could be defined as follows.
 
 ```kotlin
 @JvmInline
