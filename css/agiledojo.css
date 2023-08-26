@@ -43,6 +43,6 @@ blockquote.admonition.warning h1::before {
   content: url("./icons/triangle-exclamation-solid.svg");
   position: absolute;
   left: 40px;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
 }
