@@ -3,7 +3,6 @@ layout: post
 title: DDD Value Objects
 subtitle: Implementation Patterns for Kotlin
 category: "Domain Driven Design"
-fb-img: /images/media/posts/ddd-value-objects-in-kotlin.png
 ref: dddvalueobjectsinkotlin
 description: "DDD Value Objects in Kotlin"
 ---
