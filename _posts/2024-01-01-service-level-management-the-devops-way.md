@@ -7,14 +7,14 @@ ref: sliandslo
 description: "Service Level Management the DevOps Way"
 ---
 
-Site Reliability Engineering by Google provides DevOps teams with a tool for service level management that goes beyond merely measuring the availability and uptime of systems with Service Level Indicators and Objectives. It is possible to integrate this approach into the development process easily and pragmatically by combining methods from software architecture and domain driven design. 
-
+With the shift to DevOps product teams take responsibility for the overall reliability of a system. As a consequence they need a service level management that goes beyond merely measuring the availability and uptime of servers. Service Level Indicators and Objectives help them to achieve this by specifying and monitoring reliability from a user perspective. Together with methods from software architecture and domain driven design this approach can be seamlessly integrated into the accustomed development process.
+ 
 <!--more-->
 
 When things went wrong with your Software Systems back when operations and development were separate, playing the blame game was quite popular. I remember a post mortem after a disastrous release of a web system ending with a complete rollback. The ops guys opened the meeting with the statement: "From the ops perspective it was a perfect release yesterday!". Yieks! As well as this, it also worked the other way around. Ever heard of the classic "Worked on my machine" statement from a developer? Nowadays, product teams are responsible for the overall reliability of a system thanks to DevOps.
 
 ## Reliability vs Availability
-However, there is still the possibility of disappointment if customers and DevOps Team don't understand what to expect from the system in terms of reliability. Many application servers are measured by simple metrics such as availability and uptime, but does this really represent what your customer wants? Google's Site Reliability Engineers summarized this mismatch as follows:
+However, there is still the possibility of disappointment if customers and DevOps Team don't understand what to expect from the system in terms of reliability. Often it is expressed by simple metrics such as availability and uptime, but does this really represent what your customer wants? Google's Site Reliability Engineers summarized this mismatch as follows:
 
 > It doesn‘t matter if you can point to zero errors in your logs, or perfect availabilty metrics, or incredible uptime; if your user don't think you're being reliable, you're not.
 >
@@ -38,7 +38,7 @@ Finally the reservation system sends a reservation confirmation to the customer.
 
 Using the Domain Story Modeler Tool we can capture this story in the following diagram:
 
-![[Domain Story for SLIs.png]]
+![Domain Story](/images/postinline/posts/domain_story_for_slis.png)
 
 The quality attributes associated with the business capabilities of the service must be investigated once the business capabilities have been described. Software architecture uses quality scenarios as a well-known way to capture them. Based on all interactions in our domain story, we identify quality scenarios that characterize a reliable system behavior.
 
