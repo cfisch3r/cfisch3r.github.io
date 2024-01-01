@@ -5,6 +5,7 @@ subtitle: Implementation Patterns for Kotlin
 category: "Domain Driven Design"
 ref: dddvalueobjectsinkotlin
 description: "DDD Value Objects in Kotlin"
+fb-img: /images/originals/posts/ddd-value-objects-implemented-in-kotlin.png
 ---
 
 It is exciting for me to learn a new programming language, since it provides me with the opportunity to solve common programming problems more efficiently. In my primary area of work, back office business applications, Domain Driven Design (DDD) is widely used. So, when I switched from Java to Kotlin, I was curious to see how my new main language applies to these patterns . My first step was to learn about implementation alternatives of value objects, a concept for modelling data in DDD.
