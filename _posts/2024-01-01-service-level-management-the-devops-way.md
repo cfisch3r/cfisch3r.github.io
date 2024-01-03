@@ -38,7 +38,7 @@ Finally the reservation system sends a reservation confirmation to the customer.
 
 Using the Domain Story Modeler Tool we can capture this story in the following diagram:
 
-![Domain Story](/images/originals/posts/domain_story_for_slis.png)
+![Domain Story](/images/originals/posts/domain-story-for-slis.png)
 
 The quality attributes associated with the business capabilities of the service must be investigated once the business capabilities have been described. Software architecture uses quality scenarios as a well-known way to capture them. Based on all interactions in our domain story, we identify quality scenarios that characterize a reliable system behavior.
 
