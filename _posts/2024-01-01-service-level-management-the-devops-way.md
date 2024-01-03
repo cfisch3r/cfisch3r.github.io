@@ -38,26 +38,18 @@ Finally the reservation system sends a reservation confirmation to the customer.
 
 Using the Domain Story Modeler Tool we can capture this story in the following diagram:
 
-![Domain Story](/images/postinline/posts/domain_story_for_slis.png)
+![Domain Story](/images/originals/posts/domain_story_for_slis.png)
 
 The quality attributes associated with the business capabilities of the service must be investigated once the business capabilities have been described. Software architecture uses quality scenarios as a well-known way to capture them. Based on all interactions in our domain story, we identify quality scenarios that characterize a reliable system behavior.
 
 | System             | Quality Scenario        | Covered Step IDs | Quality Attribute |
-
-| ------------------ | ----------------------- | ---------------- | ----------------- |
-
+|------------------|-----------------------|----------------|-----------------|
 | Reservation System | View Seat Plan          | 1,4              | Availibilty       |
-
 |                    |                         |                  | Latency           |
-
 |                    |                         |                  | Data Actuality    |
-
 |                    | Make Reservation        | 5,6              | Availability      |
-
 |                    |                         |                  | Latency           |
-
 | Booking System     | Lookup Train Connection | 2,3              | Availybility      |
-
 |                    |                         |                  | Latency           |
 
 ## Service Level Indicators and Objectives
@@ -76,17 +68,11 @@ The last step is to establish the range of measured values for which the system 
 To return to our reservation system example, we came up with the following SLIs and SLOs following discussion with our stakeholders.
 
 | Quality Scenario         | Quality Attribute | SLI                                            | SLO  |
-
 | ------------------------ | ----------------- | ---------------------------------------------- | ---- |
-
 | View Seat plan           | Availability      | Rate of successful responses               | > 99% |
-
 |                          | Data Actuality    | Time between Plan update and display           |  < 20 min    |
-
 |                          | Latency           | 90% Percentile for response times for requests | < 3s |
-
 | Make Reservation Request | Availability      | Rate of successful responses                   | > 99%     |
-
 |                          | Latency           | 90% Percentile for response times for requests | < 3s |
 
 ## Managing dependencies
