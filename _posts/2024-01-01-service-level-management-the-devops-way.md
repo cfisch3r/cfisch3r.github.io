@@ -11,10 +11,10 @@ With the shift to DevOps product teams take responsibility for the overall relia
  
 <!--more-->
 
-When things went wrong with your Software Systems back when operations and development were separate, playing the blame game was quite popular. I remember a post mortem after a disastrous release of a web system ending with a complete rollback. The ops guys opened the meeting with the statement: "From the ops perspective it was a perfect release yesterday!". Yieks! As well as this, it also worked the other way around. Ever heard of the classic "Worked on my machine" statement from a developer? Nowadays, product teams are responsible for the overall reliability of a system thanks to DevOps.
+When things went wrong with your Software Systems back when operations and development were separate, playing the blame game was quite popular. I remember a post mortem after a disastrous release of a web system ending with a complete rollback. The ops guys opened the meeting with the statement: "From the ops perspective it was a perfect release yesterday!". Yieks! As well as this, it also worked the other way around. Ever heard of the classic "Worked on my machine" statement from a developer? From a customer perspective this is a nightmare. Fortunately with the rise of the DevOps paradigm this dilemma vanished anf product teams took over the responsibility for the overall reliability of their systems.
 
 ## Reliability vs Availability
-However, there is still the possibility of disappointment if customers and DevOps Team don't understand what to expect from the system in terms of reliability. Often it is expressed by simple metrics such as availability and uptime, but does this really represent what your customer wants? Google's Site Reliability Engineers summarized this mismatch as follows:
+Nonetheless, there is still the chance of disappointment if the customer and the product team don't understand what exactly to expect from the system in terms of reliability. Often it is expressed by simple metrics such as availability and uptime, but does this really represent what your customer wants? Google's Site Reliability Engineers summarized this mismatch as follows:
 
 > It doesn‘t matter if you can point to zero errors in your logs, or perfect availabilty metrics, or incredible uptime; if your user don't think you're being reliable, you're not.
 >
@@ -38,7 +38,7 @@ Finally the reservation system sends a reservation confirmation to the customer.
 
 Using the Domain Story Modeler Tool we can capture this story in the following diagram:
 
-![Domain Story](/images/originals/posts/domain-story-for-slis.png)
+![Domain Story](/images/originals/posts/domain-story-for-train-reservation.png)
 
 The quality attributes associated with the business capabilities of the service must be investigated once the business capabilities have been described. Software architecture uses quality scenarios as a well-known way to capture them. Based on all interactions in our domain story, we identify quality scenarios that characterize a reliable system behavior.
 
