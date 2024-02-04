@@ -5,6 +5,7 @@ subtitle: Service Level Indicators and Objectives in Action
 category: "Site Reliability Engineering"
 ref: sliandslo
 description: "Service Level Management the DevOps Way"
+fb-img: /images/originals/posts/service-level-management-the-devops-way-og.png
 ---
 
 With the shift to DevOps product teams take responsibility for the overall reliability of a system. As a consequence they need a service level management that goes beyond merely measuring the availability and uptime of servers. Service Level Indicators and Objectives help them to achieve this by specifying and monitoring reliability from a user perspective. Together with methods from software architecture and domain driven design this approach can be seamlessly integrated into the accustomed development process.
