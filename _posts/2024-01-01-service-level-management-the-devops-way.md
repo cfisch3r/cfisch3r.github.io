@@ -12,7 +12,7 @@ With the shift to DevOps product teams take responsibility for the overall relia
  
 <!--more-->
 
-When things went wrong with your Software Systems back when operations and development were separate, playing the blame game was quite popular. I remember a post mortem after a disastrous release of a web system ending with a complete rollback. The ops guys opened the meeting with the statement: "From the ops perspective it was a perfect release yesterday!". Yieks! As well as this, it also worked the other way around. Ever heard of the classic "Worked on my machine" statement from a developer? From a customer perspective this is a nightmare. Fortunately with the rise of the DevOps paradigm this dilemma vanished anf product teams took over the responsibility for the overall reliability of their systems.
+When things went wrong with your Software Systems back when operations and development were separate, playing the blame game was quite popular. I remember a post mortem after a disastrous release of a web system ending with a complete rollback. The ops guys opened the meeting with the statement: "From the ops perspective it was a perfect release yesterday!". Yieks! As well as this, it also worked the other way around. Ever heard of the classic "Worked on my machine" statement from a developer? From a customer perspective this is a nightmare. Fortunately with the rise of the DevOps paradigm this dilemma vanished and product teams took over the responsibility for the overall reliability of their systems.
 
 ## Reliability vs Availability
 Nonetheless, there is still the chance of disappointment if the customer and the product team don't understand what exactly to expect from the system in terms of reliability. Often it is expressed by simple metrics such as availability and uptime, but does this really represent what your customer wants? Google's Site Reliability Engineers summarized this mismatch as follows:
@@ -77,7 +77,7 @@ To return to our reservation system example, we came up with the following SLIs 
 |                          | Latency           | 90% Percentile for response times for requests | < 3s |
 
 ## Managing dependencies
-So far, we have examined the reliability scenarios for the reservation system, but what about those for the booking system? Our SLOs depend on them as well. In order to satisfy our SLO for viewing a seat plan, the search for a train connection must guarantee a certain performance. Our service level agreement with the booking system must therefore match our specifications.
+So far, we have examined the reliability scenarios for the reservation system, but what about those for the booking system? Our SLOs depend on them as well. In order to satisfy our SLO for viewing a seat plan, the search for a train connection must guarantee a certain performance. So we have to keep in mind that our service level agreement with the booking system team must match our SLOs.
 
 ## Conclusion
 In order to build and maintain a reliable system for your customers, it is not enough to measure its availability. Service Level Indicators and Objectives based on the crucial use case scenarios provide a more detailed and realistic view and help to specify and manage the system's service level. 
