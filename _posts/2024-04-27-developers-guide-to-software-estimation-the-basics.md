@@ -6,6 +6,7 @@ category: "Software Estimation"
 ref: estimationbasics
 description: "The basics on Software Estimation"
 fb-img: /images/originals/posts/service-level-management-the-devops-way-og.png
+bigimg: /images/originals/posts/estimation-guide-header.png
 ---
 
 Getting asked about estimations was my worst nightmare when I started my career as a software engineer. Writing software was easy for me because I was familiar with design patterns, architecture styles, and principles in software engineering. But when it came to giving a forecast for a new project, I was lost. Where should I start? Where should I end? What principles should I follow and what methods can I use? To make matters worse, there were high expectations for a sound estimate. It was often crucial to the profit of my company. But how can I provide a forecast that meets all expectations and is profound at the same time?
