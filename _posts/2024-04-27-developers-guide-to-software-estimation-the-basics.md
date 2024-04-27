@@ -90,9 +90,10 @@ This leads me to my next tip.
 {: .admonition .warning}
 
 ## What's next?
-In this article we investigated the basics questions on software estimation:
-* when should i estimate and when not?
-* What preparation is needed for a sound forecast?
-* How do i approach an estimation?
+Now that I know these tips, I am completely relaxed and confident when I am asked for an estimation. I never make estimates based on habit or ritual, but rather question the reasons for them and balance their value with the estimation effort. What's the point of estimating story points for each backlog item in a refinement meeting if nobody ever uses this information and creates forecasts for the stakeholders?
 
-In the next article we will take a deep dive into the building blocks of estimations and learn about the characteristics of professional forecasts.
+I also always take my time and define all aspects of the estimation subject together with the stakeholder before I create a forecast. If it doesn't justify this time, the forecast shouldn't be done!
+
+Last but not least, I have an arsenal of estimation methods at my fingertips that provide a systematic estimation approach rather than making wild guesses like in a quiz show.
+
+In the next article we will take a deep dive into the building blocks of estimations and learn about the characteristics of professional forecasts. So stay tuned.
