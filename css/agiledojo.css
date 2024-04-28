@@ -10,39 +10,3 @@
   font-style: normal;
   text-align: left;
 }
-
-blockquote.admonition {
-  background-color: #ffff99;
-  color: #000000;
-  border-left: 0px;
-  font-style: normal;
-}
-
-blockquote.admonition h1 {
-  margin-left: 20px;
-  font-size: inherit; 
-} 
-
-blockquote.admonition.tip h1::before {
-  content: url("./icons/fire-flame-curved-solid.svg");
-  position: absolute;
-  left: 40px;
-  width: 10px;
-  height: 10px;
-} 
-
-blockquote.admonition.example h1::before {
-  content: url("./icons/list-solid.svg");
-  position: absolute;
-  left: 40px;
-  width: 10px;
-  height: 10px;
-}
-
-blockquote.admonition.warning h1::before {
-  content: url("./icons/triangle-exclamation-solid.svg");
-  position: absolute;
-  left: 40px;
-  width: 15px;
-  height: 15px;
-}

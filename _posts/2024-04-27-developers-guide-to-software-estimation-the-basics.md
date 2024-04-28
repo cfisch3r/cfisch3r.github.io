@@ -5,7 +5,7 @@ subtitle: "Episode I: The Basics"
 category: "Software Estimation"
 ref: estimationbasics
 description: "The basics of Software Estimation"
-fb-img: /images/originals/posts/service-level-management-the-devops-way-og.png
+fb-img: /images/originals/posts/estimation-guide-basics-fb.png
 bigimg: /images/originals/posts/estimation-guide-header-background.png
 ---
 
@@ -20,7 +20,7 @@ There is a lot of material to cover in software estimation. This is why I am spl
 The first one covers **the basics** of estimation, demonstrating the benefits of forecasting and how to approach it strategically. The second article explains **the building blocks** of an estimation and demonstrates how they provide a framework for robust forecasts. The final article will provide hands-on advice on how to work with estimates in **practice**.
 
 ## Why should I estimate anyway?
-When agile process frameworks like Scrum and Kanban became popular, I was hoping to get rid of this whole estimation business. Instead of trying to create the perfect plan and stick to it, I focused on delivering the highest value (outcome, not output) and constantly adopting the plan. In this context, who needs a reliable forecast that covers several months or even a year, especially when it means spending the precious time of developers on estimating instead of creating value? An example of this change in mind can be found in a story by David J. Anderson about a maintainance team from Microsoft who supported about 80 IT application. Due to long lead times of their support tickets, they had a bad reputation. According to a value stream analysis, it turned out that their estimation efforts were a major contributor to this problem. These insights allowed them to make a significant change.
+When agile process frameworks like Scrum and Kanban became popular, I was hoping to get rid of this whole estimation business. Instead of trying to create the perfect plan and stick to it, I focused on delivering the highest value (outcome, not output) and constantly adopting the plan. In this context, who needs a reliable forecast that covers several months or even a year, especially when it means spending the precious time of developers on estimating instead of creating value? An example of this change in mind can be found in a story by David J. Anderson about a maintainance team from Microsoft who supported about 80 IT application. Due to long lead times of their support tickets, they had a bad reputation. According to a value stream analysis, it turned out that their estimation efforts were a major contributor to this problem. These insights allowed them to make a significant change.
 
 > The estimates for new incoming work were consuming a lot of effort. We decided to analyze this using some guesswork. Despite being referred to as “rough order of mag- nitude” (ROM) estimates, the customer expectation was actually for a very accurate estimate, and team members had learned to take great care over preparing them. Each one was taking about one day for each developer and tester. We quickly calculated that the estimation effort alone was consuming around 33 percent of capacity, and on a bad month it could be as much as 40 percent. This capacity was allocated in preference to working on coding and testing. Estimating new requests was also apt to randomize plans made for that month.
 > 
@@ -36,12 +36,9 @@ Having read this story, I was confident that I would finally escape estimation h
 
 In comparison to just making a random choice, a forecast provides a better chance of picking a good decision even when it comes with a wide error margin. There is no sense in denying an estimation in these situations since reducing failure risks is much more valuable than making a forecast.
 
-With both benefits and costs in mind, I came up with my first tip. 
+With both benefits and costs in mind, I came up with my first tip.
 
-> Tip #1
-> 
-> Think twice before you estimate. There should be serious decisions to make that justify the costs.
-{: .admonition .warning}
+{% include admonition.html type="tip" title="Tip #1" body="Think twice before you estimate. There should be serious decisions to make that justify the costs." %}
 
 ## Only Facts count
 Forecasting involves many uncertainties, so it is imperative to take your time and gather as much information as possible. During this task it is important to continually share the collected data with all stakeholders. By doing this, they will be able to verify the data, correct misunderstandings, and contribute missing information.
@@ -68,10 +65,7 @@ As a result of my investigation of the previous aspects of estimation subject, t
 
 Altogether this is summarized in my second advise.
 
-> Tip #2
-> 
->  Your forecast should be documented and verified by your stakeholders.
-{: .admonition .warning}
+{% include admonition.html type="tip" title="Estimation Tip #2" body="Your forecast should be documented and verified by your stakeholders." %}
 
 ## Estimating, not guessing
 People have often argued, _"Why bother with a good estimate? They're always wrong anyway."_.Their image of a forecast seems to have their origins in quizzes or competitions where you have to answer a guess question, which is quite different from an estimation used in software development. An episode of the TV series Monk illustrates the difference quite well.
@@ -85,9 +79,7 @@ Using one of these methods gives me a clear process to follow, ensuring it can 
 
 This leads me to my next tip.
 
-> Tip #3
-> Don't rush. Select a well established estimation method and never make a wild guess.
-{: .admonition .warning}
+{% include admonition.html type="tip" title="Estimation Tip #3" body="Don't rush. Select a well established estimation method and never make a wild guess." %}
 
 ## What's next?
 Now that I know these tips, I am completely relaxed and confident when I am asked for an estimation. I never make estimates based on habit or ritual, but rather question the reasons for them and balance their value with the estimation effort. What's the point of estimating story points for each backlog item in a refinement meeting if nobody ever uses this information and creates forecasts for the stakeholders?

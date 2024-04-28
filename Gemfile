@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'jekyll-sass-converter'
+gem 'webrick'
 gem 'github-pages'
 gem 'net-sftp'
 gem 'mini_magick'
