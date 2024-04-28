@@ -38,7 +38,7 @@ In comparison to just making a random choice, a forecast provides a better chanc
 
 With both benefits and costs in mind, I came up with my first tip.
 
-{% include admonition.html type="tip" title="Tip #1" body="Think twice before you estimate. There should be serious decisions to make that justify the costs." %}
+{% include admonition.html type="tip" title="Estimation Tip #1" body="Think twice before you estimate. There should be serious decisions to make that justify the costs." %}
 
 ## Only Facts count
 Forecasting involves many uncertainties, so it is imperative to take your time and gather as much information as possible. During this task it is important to continually share the collected data with all stakeholders. By doing this, they will be able to verify the data, correct misunderstandings, and contribute missing information.
