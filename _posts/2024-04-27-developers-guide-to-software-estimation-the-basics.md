@@ -17,7 +17,7 @@ After many years of reading articles and books on this topic and experimenting w
 
 ## Overview
 There is a lot of material to cover in software estimation. This is why I am splitting this post into three parts. 
-The first one covers **the basics** of estimation, demonstrating the benefits of forecasting and how to approach it strategically. The second article explains **the building blocks** of an estimation and demonstrates how they provide a framework for robust forecasts. The final article will provide hands-on advice on how to work with estimates in **practice**.
+The first one covers **the basics** of estimation, showing the benefits of forecasting and how to approach it strategically. The second article explains **the building blocks** of an estimation and demonstrates how they provide a framework for robust forecasts. The final article will provide hands-on advice on how to work with estimates in **practice**.
 
 ## Why should I estimate anyway?
 When agile process frameworks like Scrum and Kanban became popular, I was hoping to get rid of this whole estimation business. Instead of trying to create the perfect plan and stick to it, I focused on delivering the highest value (outcome, not output) and constantly adopting the plan. In this context, who needs a reliable forecast that covers several months or even a year, especially when it means spending the precious time of developers on estimating instead of creating value? An example of this change in mind can be found in a story by David J. Anderson about a maintainance team from Microsoft who supported about 80 IT application. Due to long lead times of their support tickets, they had a bad reputation. According to a value stream analysis, it turned out that their estimation efforts were a major contributor to this problem. These insights allowed them to make a significant change.
@@ -26,7 +26,7 @@ When agile process frameworks like Scrum and Kanban became popular, I was hoping
 > 
 > -- David J. Anderson, Kanban - Sucessfull Evolutionary Change for Your Technology Business
 
-Finally they achieved an average lead time reduction of 90% of 140 days to 14 days by skipping the estimation work and focusing on always selecting the most important tickets, winning the Engineering Excellence Award.
+Finally they achieved an average lead time reduction of 90% by skipping the estimation work and focusing on always selecting the most important tickets, winning the Engineering Excellence Award.
 
 Having read this story, I was confident that I would finally escape estimation hell, but it turned out that there were still situations where focussing on the most valuable task and being efficient was not enough. When making a decision with serious consequences, you still need to invest time in estimation, if you do not want to leave the outcome to chance, for example:
 
@@ -41,7 +41,7 @@ With both benefits and costs in mind, I came up with my first tip.
 {% include admonition.html type="tip" title="Estimation Tip #1" body="Think twice before you estimate. There should be serious decisions to make that justify the costs." %}
 
 ## Only Facts count
-Forecasting involves many uncertainties, so it is imperative to take your time and gather as much information as possible. During this task it is important to continually share the collected data with all stakeholders. By doing this, they will be able to verify the data, correct misunderstandings, and contribute missing information.
+Forecasting involves many uncertainties, so it is imperative to take your time and gather as much information as possible. During this preparation phase it is important to continually share the collected data with all stakeholders. By doing this, they will be able to verify the data, correct misunderstandings, and contribute missing information.
 
 A checklist tailored to the business context can be helpful in making sure you don't overlook anything important. Over the years, I have come up with these topics that I always keep in mind.
 
@@ -58,12 +58,12 @@ The technical side of connecting with other systems is complex. You must deal wi
 There are always circumstances that restrict how you develop a solution, and therefore have an impact on the effort, even when you start a greenfield project. Technology portfolios and development and build processes are determined by **technical constraints**. **Organizational constraints** affect communication paths, handovers and decision-making processes. **Regulatory constraints** can have you preparing and studying a lot of documents. It takes some time to research all constraints, especially if it is my first time in this specific environment, but it prevents me from being caught off guard later.
 
 ### Assumptions
-Forecasts are always based on assumptions, which are volatile by nature. You have to make assumptions about interfaces, business models, delivery times. In case these assumptions are wrong, the whole forecast can be rendered obsolete. In order to ensure stakeholders can check their validity and see that the forecast may not work out, I summarize them in an overview and **make these hypotheses transparent** for them.
+Forecasts are always based on assumptions, for example about interfaces, business models, delivery times. In case these assumptions are wrong, the whole forecast can be rendered obsolete. In order to ensure stakeholders can check their validity and see that the forecast may not work out, I summarize them in an overview and **make these hypotheses transparent** for them.
 
 ### Exclusions and Risks
 As a result of my investigation of the previous aspects of estimation subject, there are **requirements that present risks or have to be excluded due to high uncertainties**. This information should be shared with stakeholders so that disappointments can be avoided and risk associated with the forecast can be understood. Furthermore, this is a call for them to manage these risks.
 
-Altogether this is summarized in my second advise.
+Altogether this is summarized in my second advice.
 
 {% include admonition.html type="tip" title="Estimation Tip #2" body="Gather all information about the estimation subject, including assumptions, constraints and risks, and let stakeholders confirm them." %}
 
@@ -75,16 +75,16 @@ By simply putting together **observations, assumptions and simple math** Monk wa
 
 In the context of software development, such a systematic approach to forecasting is exactly what we need. Fortunately, there are a whole range of methods available in this area, so there's no reason to guess.
 
-Using one of these methods gives me a clear process to follow, ensuring it can be reproduced. In this way, I can apply the method over and over, gather data, and continuously improve it for the specific context. Furthermore, using estimation methods protects me from my own biases. Since I love starting new projects and I am enthusiastic about them, I tend to be overly optimistic about estimates. From my observation, I am not the only one; according to a project manager I once met, he always triples the developers' estimates and increases the order of magnitude by one to get a realistic estimate. :-)
+Using an estimation method gives me a clear process to follow, ensuring it can be reproduced. In this way, I can apply the method over and over, gather data, and continuously improve it for the specific context. Furthermore, using estimation methods protects me from my own biases. Since I love starting new projects and I am enthusiastic about them, I tend to be overly optimistic about estimates. From my observation, I am not the only one; according to a project manager I once met, he always triples the developers' estimates and increases the order of magnitude by one to get a realistic estimate. :-)
 
 This leads me to my next tip.
 
 {% include admonition.html type="tip" title="Estimation Tip #3" body="Don't rush. Select a well established estimation method and never make a wild guess." %}
 
 ## What's next?
-Now that I know these tips, I am completely relaxed and confident when I am asked for an estimation. I never make estimates based on habit or ritual, but rather question the reasons for them and balance their value with the estimation effort. What's the point of estimating story points for each backlog item in a refinement meeting if nobody ever uses this information and creates forecasts for the stakeholders?
+Now that I know these tips, I am completely relaxed and confident when I am asked for an estimation. I never make estimations out of habit or as part of a ritual, but rather question the reasons for them and balance their value with the estimation effort. What's the point of estimating story points for each backlog item in a refinement meeting if nobody ever uses this information and creates forecasts for the stakeholders?
 
-I also always take my time and define all aspects of the estimation subject together with the stakeholder before I create a forecast. If it doesn't justify this time, the forecast shouldn't be done!
+I also always take my time and define all aspects of the estimation subject together with the stakeholder before I create a forecast. If it doesn't justify this preparation time, the forecast shouldn't be done!
 
 Last but not least, I have an arsenal of estimation methods at my fingertips that provide a systematic estimation approach rather than making wild guesses like in a quiz show.
 
