@@ -65,12 +65,12 @@ As a result of my investigation of the previous aspects of estimation subject, t
 
 Altogether this is summarized in my second advise.
 
-{% include admonition.html type="tip" title="Estimation Tip #2" body="Your forecast should be documented and verified by your stakeholders." %}
+{% include admonition.html type="tip" title="Estimation Tip #2" body="Gather all information about the estimation subject, including assumptions, constraints and risks, and let stakeholders confirm them." %}
 
 ## Estimating, not guessing
 People have often argued, _"Why bother with a good estimate? They're always wrong anyway."_.Their image of a forecast seems to have their origins in quizzes or competitions where you have to answer a guess question, which is quite different from an estimation used in software development. An episode of the TV series Monk illustrates the difference quite well.
 
-In "Mr. Monk goes to the Carnival" Benjy, the son of his assistant, enters a contest where he can win a boombox if he correctly guesses how many jellybeans there are in a jar. Monk gives him the correct answer without even seeing the jar, and Benjy wins the contest. At the end of the episode Monk explains how he could make such a good estimation. When he arrived at the carnival he noticed six jellybean boxes on a pile of garbage. The labels on these boxes said that each of them contains 1,400 jellybeans, which means a sum of 8,400 beans altogether. Assuming the organizer of the competition ate a handful or two he came to his estimation of 8,385 beans.
+In _"Mr. Monk goes to the Carnival"_ Benjy, the son of his assistant, enters a contest where he can win a boombox if he correctly guesses how many jellybeans there are in a jar. Monk gives him the correct answer without even seeing the jar, and Benjy wins the contest. At the end of the episode Monk explains how he could make such a good estimation. When he arrived at the carnival he noticed six jellybean boxes on a pile of garbage. The labels on these boxes said that each of them contains 1,400 jellybeans, which means a sum of 8,400 beans altogether. Assuming the organizer of the competition ate a handful or two he came to his estimation of 8,385 beans.
 By simply putting together **observations, assumptions and simple math** Monk was able to achieve a tremendously better result than the other competitors.
 
 In the context of software development, such a systematic approach to forecasting is exactly what we need. Fortunately, there are a whole range of methods available in this area, so there's no reason to guess.
