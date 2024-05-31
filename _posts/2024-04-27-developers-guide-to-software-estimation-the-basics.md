@@ -88,4 +88,4 @@ I also always take my time and define all aspects of the estimation subject toge
 
 Last but not least, I have an arsenal of estimation methods at my fingertips that provide a systematic estimation approach rather than making wild guesses like in a quiz show.
 
-In the next article we will take a deep dive into the building blocks of estimations and learn about the characteristics of professional forecasts. So stay tuned.
+In the [next article](2024-05-31-developers-guide-to-software-estimation-the-four-magic-numbers.md) we will take a deep dive into the four magic numbers of estimations and learn about the characteristics of professional forecasts. So stay tuned.

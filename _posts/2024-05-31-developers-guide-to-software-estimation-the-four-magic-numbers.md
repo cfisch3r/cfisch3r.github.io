@@ -9,7 +9,9 @@ fb-img: /images/originals/posts/estimation-guide-four-magic-numbers-fb.png
 bigimg: /images/originals/posts/estimation-guide-header-background.png
 ---
 
-The first article in this series covered the basics of software estimation and concluded that a systematic approach has to be prefered over a  wild guesses. But what are the elements we need for a profound forecast and how do they work? Those are the questions we will address in this article about the four magic numbers of software estimation.
+The [first article](2024-04-27-developers-guide-to-software-estimation-the-basics.md) in this series covered the basics of software estimation and concluded that a systematic approach has to be preferred over a wild guesses. But what are the elements we need for a profound forecast and how do they work? Those are the questions we will address in this article about the four magic numbers of software estimation.
+
+<!--more-->
 
 ## Estimations are no Promises
 Suppose you took your car to a garage for an inspection and asked the engineer how much it would cost. The engineer replied, "That's 250€." When you return the next day to pick up your car, you are surprised to see 578€ on the bill. Asking the engineer what happened, he replied: "Oh yeah, you know, we found out that we had to replace the brakes. That will be extra." Are you thinking of returning to the garage in the future or recommending it?
@@ -39,6 +41,7 @@ As the project's information becomes more available, the variability narrows. It
 | Requirements Complete       | Refined Stories          | 0.67x                      | 1.5x                        | 2,25x                          |
 | User Interface Complete     | Sprint Planning I        | 0.8x                       | 1.25x                       | 1.6x                           |
 | Detailed Design Complete    | Sprint Planning II       | 0.9x                       | 1.10x                       | 1.2x                           |
+
 By using this table, I can check if my estimation ranges match the volatility of the requirements at the specific phase of the software development process and adjust them. This often leads to ranges that are far wider than stakeholders are used to. Sticking to this result takes courage, but don't worry; it gets easier with time. 😀
 
 {% include admonition.html type="tip" title="Estimation Tip #5" body="Consider the cone of uncertainty when choosing the estimation range." %}
@@ -50,22 +53,20 @@ Making a plan requires discrete start and end dates for each task to map their d
 
 Unfortunately there is no exact way to determine this function for the estimations we make, but we can choose a mathematical function to model it. The probably most known distribution function is the [Gaussian Normal Distribution]([https://en.wikipedia.org/wiki/Normal_distribution](https://en.wikipedia.org/wiki/Normal_distribution)). This is how it looks for our estimation range:
 
-![[Excalidraw/Estimation-Distribution-Ideal.excalidraw.md#^group=PiW0jCSRDe20B4_Yez_UA]]
+![Gaussian Normal Distribution](/images/originals/posts/estimation-guide-gaussian-distribution.png)
 
 For each value, the graph shows the probability. The value with the highest probability lies in the middle of our estimation range and is called the **expected value**. We tend to choose this value for our plan intuitively, but this is quite risky. Despite having a 50% probability of the actual value being lower or equal to the expected value, there is also a 50% chance that the actual value is higher than the expected, meaning that the plan will not succeed. I don't think this is what we are looking for most of the time, is it?
 
 Software estimations present specific characteristics that make this situation even worse. In his book, McConnell suggests a more realistic distribution curve for software estimation than the Gaussian Distribution .
 
-
-
-![[Excalidraw/Estimation-Distribution-Ideal.excalidraw.md#^group=nyas8GVeeJFeQeLUz2FmQ]]
+![Gaussian Normal Distribution](/images/originals/posts/estimation-guide-realistic-distribution.png)
 
 According to him, the chances of accomplishing a software task drop quite fast when we move from the expected to the minimum value. This is because there is a fixed value below which no one can accomplish the task. However, on the other side of increasing values, there are potentially endless options that can increase the actual effort. As a result, the curve drops much slower at higher values. There will always be situations where the estimated task cannot be completed, so it will never go to zero. As an example, the company's goals can change and the project must be canceled. Our maximum value must therefore be one with a very low probability that we can ignore.
 
 Because the curve is asymmetric, the expected value is no longer the value with a 50% chance, but rather lies just to the left of it. Moreover, there is another consequence that contributes to poor estimation results. When asked to provide an estimation range, we often start with the expected value and then consider the value we can achieve under perfect conditions as the minimum. Based on the Gaussian Distribution, we then assume that the maximum has the same distance to the expected value as the minimum. As shown in the following diagram, this misconception results in an unrealistically low maximum value.
 
 
-![[Excalidraw/Estimation-Distribution-Ideal.excalidraw.md#^frame=37mlNwUCOMjABvIYFnfZu]]
+![Confidence Interval](/images/originals/posts/estimation-guide-confidence-interval.png)
 
 In order to avoid falling into this trap, ensure that you double check your maximum value if the expected value is just in the middle of your estimation range. It can be helpful to ask yourself: "Where is the value where I would quit my job when it is exceeded?" This is the real maximum even if it seems excessive. The next tip summarizes this strategy.
 
@@ -76,9 +77,10 @@ Let's return to the question of which value to choose for planning. By deciding 
 
 This question for the proper confidence interval must be addressed to the stakeholders who , ultimately, are taking the risks. For most of them, this is an unfamiliar request, so they struggle to respond. Using this diagram that illustrates a 90% confidence interval, I explain to them what I'm asking for.
 
-![[Excalidraw/Estimation-Distribution-Ideal.excalidraw.md#^group=VSQArQZMK82YgDkTvIrRI]]
+![Gaussian vs Realisitic Distribution](/images/originals/posts/estimation-guide-gaussian-vs-realistic.png)
 
 By analyzing this diagram, we can understand how certain values of the estimation correlates to the chance of success.
+
 - **Minimum**: It is impossible to accomplish anything below this value.
 - **Expected**: This is the value with the highest probability, but also a chance to succeed of  50% in the best case.
 - **Confidence Interval**: This value has a specified chance, that the actual value will be equal or less (for example 90% like in the diagram).
