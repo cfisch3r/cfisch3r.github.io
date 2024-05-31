@@ -3,13 +3,13 @@ layout: post
 title: Developer's Guide to Software Estimation
 subtitle: "Episode II: The four Pillars" 
 category: "Software Estimation"
-ref: estimationfourmagicnumbers
+ref: estimationfourpillars
 description: "The four pillars of software estimation"
 fb-img: /images/originals/posts/estimation-guide-four-pillars-fb.png
 bigimg: /images/originals/posts/estimation-guide-header-background.png
 ---
 
-The [first article]({% post_url 2024-04-27-developers-guide-to-software-estimation-the-basics %}) in this series covered the basics of software estimation and concluded that a systematic approach is preferable to wild guesses. But what are the elements that make up a profound forecast, and how do they work? Those are the questions we will address in this article about the four magic numbers of software estimation.
+The [first article]({% post_url 2024-04-27-developers-guide-to-software-estimation-the-basics %}) in this series covered the basics of software estimation and concluded that a systematic approach is preferable to wild guesses. But what are the elements that make up a profound forecast, and how do they work? Those are the questions we will address in this article about the four pillars of software estimation.
 
 <!--more-->
 
