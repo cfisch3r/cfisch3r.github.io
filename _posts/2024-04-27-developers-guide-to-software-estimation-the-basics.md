@@ -88,5 +88,5 @@ I also always take my time and define all aspects of the estimation subject toge
 
 Last but not least, I have an arsenal of estimation methods at my fingertips that provide a systematic estimation approach rather than making wild guesses like in a quiz show.
 
-In the [next article]({% post_url 2024-05-31-developers-guide-to-software-estimation-the-four-magic-numbers %}) we will take a deep dive into the four pillars of an estimation
+In the [next article]({% post_url 2024-05-31-developers-guide-to-software-estimation-the-four-pillars %}) we will take a deep dive into the four pillars of an estimation
 and learn about the characteristics of professional forecasts. So stay tuned.
