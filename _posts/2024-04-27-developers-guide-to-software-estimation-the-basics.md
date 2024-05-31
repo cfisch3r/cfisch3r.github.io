@@ -17,7 +17,7 @@ After many years of reading articles and books on this topic and experimenting w
 
 ## Overview
 There is a lot of material to cover in software estimation. This is why I am splitting this post into three parts. 
-The first one covers **the basics** of estimation, showing the benefits of forecasting and how to approach it strategically. The second article explains **the building blocks** of an estimation and demonstrates how they provide a framework for robust forecasts. The final article will provide hands-on advice on how to work with estimates in **practice**.
+The first one covers **the basics** of estimation, showing the benefits of forecasting and how to approach it strategically. The second article explains [the four Magic Numbers]({% post_url 2024-05-31-developers-guide-to-software-estimation-the-four-magic-numbers %}) of an estimation and demonstrates how they provide a framework for robust forecasts. The final article will provide hands-on advice on how to work with estimates in **practice**.
 
 ## Why should I estimate anyway?
 When agile process frameworks like Scrum and Kanban became popular, I was hoping to get rid of this whole estimation business. Instead of trying to create the perfect plan and stick to it, I focused on delivering the highest value (outcome, not output) and constantly adopting the plan. In this context, who needs a reliable forecast that covers several months or even a year, especially when it means spending the precious time of developers on estimating instead of creating value? An example of this change in mind can be found in a story by David J. Anderson about a maintainance team from Microsoft who supported about 80 IT application. Due to long lead times of their support tickets, they had a bad reputation. According to a value stream analysis, it turned out that their estimation efforts were a major contributor to this problem. These insights allowed them to make a significant change.
@@ -88,4 +88,4 @@ I also always take my time and define all aspects of the estimation subject toge
 
 Last but not least, I have an arsenal of estimation methods at my fingertips that provide a systematic estimation approach rather than making wild guesses like in a quiz show.
 
-In the [next article](2024-05-31-developers-guide-to-software-estimation-the-four-magic-numbers.md) we will take a deep dive into the four magic numbers of estimations and learn about the characteristics of professional forecasts. So stay tuned.
+In the [next article]({% post_url 2024-05-31-developers-guide-to-software-estimation-the-four-magic-numbers %}) we will take a deep dive into the four magic numbers of estimations and learn about the characteristics of professional forecasts. So stay tuned.
