@@ -4,8 +4,8 @@ title: Developer's Guide to Software Estimation
 subtitle: "Episode II: The four Magic Numbers" 
 category: "Software Estimation"
 ref: estimationfourmagicnumbers
-description: "The four magic numbers of Software Estimation"
-fb-img: /images/originals/posts/estimation-guide-four-magic-numbers-fb.png
+description: "The four Pillars"
+fb-img: /images/originals/posts/estimation-guide-four-pillars-fb.png
 bigimg: /images/originals/posts/estimation-guide-header-background.png
 ---
 
@@ -16,7 +16,7 @@ The [first article]({% post_url 2024-04-27-developers-guide-to-software-estimati
 ## Estimations are no Promises
 Suppose you took your car to a garage for an inspection and asked the engineer how much it would cost. The engineer replied, _"That's 250€."_ When you return the next day to pick up your car, you are surprised to see 578€ on the bill. Asking the engineer what happened, he replied: _"Oh yeah, you know, we found out that we had to replace the brakes. That will be extra."_ Are you thinking of returning to the garage in the future or recommending it?
 
-This is an example of one of the most common errors in software estimation: providing a discrete number. It implies that there is no uncertainty and often will be misinterpreted as a promise. Chances are high that your stakeholders will be disappointed if the actual value exceeds your estimation, as in the example above. Even worse, they will lose faith in your engineering expertise.
+This is an example of one of the most common errors in software estimation: providing just a single value. It implies that there is no uncertainty and often will be misinterpreted as a promise. Chances are high that your stakeholders will be disappointed if the actual value exceeds your estimation, as in the example above. Even worse, they will lose faith in your engineering expertise.
 
 In contrast, providing a forecast in the form of a range with a lower and upper limit emphasizes the uncertainty in your statement, as well as giving you a way to express the amount of uncertainty. It is therefore an absolute necessity in every estimation. 
 
@@ -92,6 +92,6 @@ Instead of you making the decision for the stakeholders by providing just one of
 
 ## Conclusion
 
-It has been shown that providing a single value as an estimation is not sufficient. In order to provide stakeholders with all information about risks, we must provide all of the four magic numbers: **the minimum, the expected value, the confidence interval, and the maximum**. A realistic distribution function and the cone of uncertainty must be respected to determine them reliably.
+It has been shown that providing a single value as an estimation is not sufficient. In order to provide stakeholders with all information about risks, we must provide all of the four pillars of an estimation: **the minimum, the expected value, the confidence interval, and the maximum**. A realistic distribution function and the cone of uncertainty must be respected to determine them reliably.
 
 Now that we understand how estimations work, let's examine how they are used in practice in the last part of this article series. Stay tuned!
