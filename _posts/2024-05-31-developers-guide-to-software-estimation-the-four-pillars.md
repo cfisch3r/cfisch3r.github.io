@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Developer's Guide to Software Estimation
-subtitle: "Episode II: The four Magic Numbers" 
+subtitle: "Episode II: The four Pillars" 
 category: "Software Estimation"
 ref: estimationfourmagicnumbers
-description: "The four Pillars"
+description: "The four pillars of software estimation"
 fb-img: /images/originals/posts/estimation-guide-four-pillars-fb.png
 bigimg: /images/originals/posts/estimation-guide-header-background.png
 ---
