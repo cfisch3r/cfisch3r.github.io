@@ -65,8 +65,7 @@ According to him, the chances of accomplishing a software task drop quite fast w
 
 Because the curve is asymmetric, the expected value is no longer the value with a 50% chance, but rather lies just to the left of it. Moreover, there is another consequence that contributes to poor estimation results. When asked to provide an estimation range, we often start with the expected value and then consider the value we can achieve under perfect conditions as the minimum. Based on the Gaussian Distribution, we then assume that the maximum has the same distance to the expected value as the minimum. As shown in the following diagram, this misconception results in an unrealistically low maximum value.
 
-
-![Confidence Interval](/images/originals/posts/estimation-guide-confidence-interval.png)
+![Gaussian vs Realisitic Distribution](/images/originals/posts/estimation-guide-gaussian-vs-realistic.png)
 
 In order to avoid falling into this trap, ensure that you double check your maximum value if the expected value is just in the middle of your estimation range. It can be helpful to ask yourself: "Where is the value where I would quit my job when it is exceeded?" This is the real maximum even if it seems excessive. The next tip summarizes this strategy.
 
@@ -77,7 +76,7 @@ Let's return to the question of which value to choose for planning. By deciding 
 
 This question for the proper confidence interval must be addressed to the stakeholders who , ultimately, are taking the risks. For most of them, this is an unfamiliar request, so they struggle to respond. Using this diagram that illustrates a 90% confidence interval, I explain to them what I'm asking for.
 
-![Gaussian vs Realisitic Distribution](/images/originals/posts/estimation-guide-gaussian-vs-realistic.png)
+![Confidence Interval](/images/originals/posts/estimation-guide-confidence-interval.png)
 
 By analyzing this diagram, we can understand how certain values of the estimation correlates to the chance of success.
 
