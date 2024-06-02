@@ -74,11 +74,11 @@ In order to avoid falling into this trap, ensure that you double check your maxi
 ## Let's talk about Confidence
 Let's return to the question of which value to choose for planning. By deciding for the expected value, we leave ourselves with a chance for success of less than 50%, which is insufficient for most business plans. If we choose the maximum value, we are nearly 100% confident that our plan will succeed, but we risk sacrificing the chance of accomplishing the goal sooner. The value we are looking for is somewhere in between that represents the extent to which we are prepared to take the risk of failure. This value is called the **confidence interval**.
 
-This question for the proper confidence interval must be addressed to the stakeholders who , ultimately, are taking the risks. For most of them, this is an unfamiliar request, so they struggle to respond. Using this diagram that illustrates a 90% confidence interval, I explain to them what I'm asking for.
+The question for the proper confidence interval must be addressed to the stakeholders who , ultimately, are taking the risks. For most of them, this is an unfamiliar request, so they struggle to respond. Using this diagram that illustrates a 90% confidence interval, I explain to them what I'm asking for.
 
 ![Confidence Interval](/images/originals/posts/estimation-guide-confidence-interval.png)
 
-By analyzing this diagram, we can understand how certain values of the estimation correlates to the chance of success.
+By analyzing this diagram, we can understand how the **key elements of the estimation** correlates to the chance of success.
 
 - **Minimum**: It is impossible to accomplish anything below this value.
 - **Expected**: This is the value with the highest probability, but also a chance to succeed of  50% in the best case.
@@ -91,6 +91,6 @@ Instead of you making the decision for the stakeholders by providing just one of
 
 ## Conclusion
 
-It has been shown that providing a single value as an estimation is not sufficient. In order to provide stakeholders with all information about risks, we must provide all of the four elements of an estimation: **the minimum, the expected value, the confidence interval, and the maximum**. A realistic distribution function and the cone of uncertainty must be respected to determine them reliably.
+It has been shown that providing a single value as an estimation is not sufficient. In order to provide stakeholders with all information about risks, we must provide all of the key elements of an estimation: **the minimum, the expected value, the confidence interval, and the maximum**. A realistic distribution function and the cone of uncertainty must be respected to determine them reliably.
 
 Now that we understand how estimations work, let's examine how they are used in practice in the last part of this article series. Stay tuned!
