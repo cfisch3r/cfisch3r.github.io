@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Developer's Guide to Software Estimation
-subtitle: "Episode II: The four Pillars" 
+subtitle: "Episode II: Key Elements" 
 category: "Software Estimation"
-ref: estimationfourpillars
-description: "The four pillars of software estimation"
-fb-img: /images/originals/posts/estimation-guide-four-pillars-fb.png
+ref: estimationkeyelements
+description: "The Key Elements of Software Estimation"
+fb-img: /images/originals/posts/estimation-guide-key-elements-fb.png
 bigimg: /images/originals/posts/estimation-guide-header-background.png
 ---
 
-The [first article]({% post_url 2024-04-27-developers-guide-to-software-estimation-the-basics %}) in this series covered the basics of software estimation and concluded that a systematic approach is preferable to wild guesses. But what are the elements that make up a profound forecast, and how do they work? Those are the questions we will address in this article about the four pillars of software estimation.
+The [first article]({% post_url 2024-04-27-developers-guide-to-software-estimation-the-basics %}) in this series covered the basics of software estimation and concluded that a systematic approach is preferable to wild guesses. But what are the key elements that make up a profound forecast, and how do they work? Those are the questions we will address in this article.
 
 <!--more-->
 
@@ -92,6 +92,6 @@ Instead of you making the decision for the stakeholders by providing just one of
 
 ## Conclusion
 
-It has been shown that providing a single value as an estimation is not sufficient. In order to provide stakeholders with all information about risks, we must provide all of the four pillars of an estimation: **the minimum, the expected value, the confidence interval, and the maximum**. A realistic distribution function and the cone of uncertainty must be respected to determine them reliably.
+It has been shown that providing a single value as an estimation is not sufficient. In order to provide stakeholders with all information about risks, we must provide all of the four elements of an estimation: **the minimum, the expected value, the confidence interval, and the maximum**. A realistic distribution function and the cone of uncertainty must be respected to determine them reliably.
 
 Now that we understand how estimations work, let's examine how they are used in practice in the last part of this article series. Stay tuned!
