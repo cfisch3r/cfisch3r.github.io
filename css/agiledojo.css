@@ -6,6 +6,11 @@
   background: no-repeat top center;
   background-size: contain;
 }
+@media only screen and (min-width: 768px) {
+    .intro-header.big-img {
+      background-size: contain;
+    }
+}
 
 .caption {
   font-style: normal;
