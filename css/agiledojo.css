@@ -4,6 +4,7 @@
 
 .intro-header.big-img {
   background: no-repeat top center;
+  background-size: contain;
 }
 
 .caption {
