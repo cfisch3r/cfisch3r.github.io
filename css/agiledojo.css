@@ -4,7 +4,7 @@
 
 .intro-header.big-img {
   background: no-repeat top center;
-  background-size: contain;
+  background-size: cover;
 }
 @media only screen and (min-width: 768px) {
     .intro-header.big-img {
