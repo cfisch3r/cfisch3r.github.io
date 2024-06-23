@@ -5,11 +5,12 @@ subtitle: "How to transform Experience into Expertise with the Learning Loop"
 category: "Learning"
 ref: learningloop
 description: "Accelerate learning with the Learning Loop"
-fb-img: /images/originals/posts/estimation-guide-key-elements-fb.png
+fb-img: /images/originals/posts/learning-loop-fb.png
 bigimg: /images/originals/posts/developer-before-chalkboard.png
 ---
 
 When I learned about TDD it boosted my productivity as a developer and made my professional life easier. By following this simple cycle, I was able to efficiently and effectively transform specifications into working software in an iterative manner. I've always wondered if there is something that supports the learning process in the same way, knowing it is also a crucial part of my job. As my career progressed, I accumulated practices that helped me speed up my learning. However, it wasn't until I read the book *"Get Better at Anything"* by Scott H. Young that all the pieces fitted into a picture that worked for me: **the Learning Loop**.
+<!--more-->
 
 ## The four Steps of the Learning Loop
 There are three key factors that determine how much we learn, according to Scott:
@@ -34,7 +35,7 @@ Over time, this will create a self-reinforcing cycle that enhances learning. Hav
 ## Reflecting on Experiences from Work
 It is common for software engineers to gain valuable insight into software engineering during their daily work. However, when we are under pressure and focused on results, we may not notice such experiences or do not have the time to examine them in depth. Therefore, it is important to devote a portion of time to reflecting on the observations we make on a daily basis, bringing them to our attention, and transforming them into valuable insights. Through this deliberate practice, we will be able to process these ideas in order to make impressions on our own ideas and memorize them for future use. There are a couple of techniques that will be able to help us do this.
 
-- **[[Mini Essays]] or ["Today I learned"-Posts](https://github.com/jbranchaud/til)**: Writing down the thoughts you have in a 100 to 300 words sharpens them up and leverages the [generation effect]([https://en.wikipedia.org/wiki/Generation_effect](https://en.wikipedia.org/wiki/Generation_effect)) to memorize them. This can also help you think about it more deeply.
+- **[Mini Essays](https://youtu.be/XsIK2kVbH6Y?si=6HFX8vs9KDLDuk5y) or ["Today I learned"-Posts](https://github.com/jbranchaud/til)**: Writing down the thoughts you have in a 100 to 300 words sharpens them up and leverages the [generation effect]([https://en.wikipedia.org/wiki/Generation_effect](https://en.wikipedia.org/wiki/Generation_effect)) to memorize them. This can also help you think about it more deeply.
 - **Discussion with Peer Group**: Taking part in a peer group discussion with other colleagues gives you the opportunity to not only reflect your thinking through the perspective of others, but also learn from them as they go about their day to day work.
 - **Gen AI**: An AI conversation can provide a unique opportunity for you to challenge your ideas in front of the collective knowledge in software engineering. They can also provide a space for new ideas and perspectives to be shared and debated. This can help you to identify potential solutions to your challenges.
 
@@ -50,6 +51,7 @@ There is a high probability that we are not the first ones to encounter the prob
 In order to get the most benefit from the knowledge that is gathered through study, we need to turn it into skills that are applicable. Practicing is the best way to achieve this goal, or in the words of the violin teacher Shinichi Suzuki:
 
 > Knowledge is not skill. Knowledge plus ten thousand times is skill.
+> 
 > -- Shinichi Suzuki
 
 Practice is different from applying your knowledge in the real world as it allows mistakes. We do not have to be careful when trying out new methods, technologies or tools, but rather we can concentrate on understanding how they work so that we can adopt them quickly. In addition, we don't need to worry about time pressure in a project so that we can keep practicing a new skill over and over again until we become fluent with it, even under difficult circumstances. There are a lot of different practice forms that you can use; here are just a few to give you an idea of what you can do:
