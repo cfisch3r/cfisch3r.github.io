@@ -59,9 +59,9 @@ Practice is different from applying your knowledge in the real world as it allow
 - **Katas and Koans**: While Katas are used to learn coding techniques like TDD, Koans are exercises to learn a new programming language. As both require a simple setup and allow you to focus on a single subject, they reduce cognitive load. Training resources like these can be found online.
 - **Breakable Toys**: These are usually small applications, which can be used to learn new frameworks or patterns. There are often sample applications provided by framework providers, such as [the Spring PetClinic](https://github.com/spring-projects/spring-petclinic), but you can also create your own toy application.
 - **Forking your own Project**: more realistic training scenario can be achieved by forking your current project. As you are familiar with the code, you don't need to spend time learning the training setting. Furthermore, it provides a safe and controlled environment for practicing and improving coding skills.
-- 
+
 ## Validating Skills and Knowledge
 By applying the newly acquired knowledge and your improved skills to your work, not only do you reap the rewards of your learning efforts. In addition, it allows you to test your skills in real-world scenarios and learn about their limitations, leading to new reflection points so that you can gain further insight. It's clear where this is going, isn't it? We build a self-reinforcing learning loop by closing the cycle!
 
 ## Conclusion
-In the same way as TDD, the learning loop is an iterative process that lets you accomplish your goals incrementally.In each step, we only focus on one of the three success factors of learning: See, Practice, and Feedback. In this way, you can reduce cognitive load and maximize the efficiency of your learning.
+In the same way as TDD, the learning loop is an iterative process that lets you accomplish your goals incrementally. In each step, we only focus on one of the three success factors of learning: See, Practice, and Feedback. In this way, you can reduce cognitive load and maximize the efficiency of your learning.
