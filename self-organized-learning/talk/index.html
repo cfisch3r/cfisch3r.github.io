@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title></title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/night.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			let size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				while(element.scrollHeight > element.offsetHeight){
+					size--;
+					element.style.fontSize = `${size}px`;
+				}
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/developer-before-chalkbard.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 10%; height: 40%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+ <div class="block">
+
+# Self Organized Learning
+</div>
+
+
+</div>
+
+<div class="" style="font-size: 1.5em; position: absolute; left: 0%; top: 50%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+<style>
+:root {
+	--r-main-font-size: 32px;
+	 --r-heading-margin: 0 0 0 0;
+	 --r-heading1-text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	 --r-heading-text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	 --r-heading3-size:1.4em
+} 
+
+body {
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0  #000
+}
+
+blockquote {
+	text-align: left
+}
+
+.reveal h2 {
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
+} 
+
+.reveal h3 {
+	color: orange;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
+}
+
+.reveal ul {
+	margin: 0 0 1em 1em;
+}
+
+</style>
+
+
+
+
+
+**Principles, Practices and Tools** to transform Experience into Expertise 
+
+
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/developer-with-mortarboard-in-front-of-computer.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Learning from your Work
+</div>
+
+
+</div>
+
+
+
+
+
+
+> Experience is the best teacher, and the worst experiences teach the best lessons.”   
+> -- Jordan Peterson
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/chalkboard.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Daily Business as a Teacher
+</div>
+
+
+</div>
+
+
+<div class="fragment" style="padding: 20px; box-sizing: border-box; position: absolute; left: 0%; top: 15%; height: 70%; width: 45%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top" data-fragment-index="1">
+
+
+<div class="block">
+
+### 👍 Benefits 
+- Motivation by  direct Return on Invest 
+- Feedback Loop through Learning by doing 
+- Focus 
+</div>
+
+
+
+</div>
+
+<div class="fragment" style="padding: 20px; box-sizing: border-box; position: absolute; left: 55%; top: 15%; height: 70%; width: 45%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top" data-fragment-index="2">
+
+
+<div class="block">
+
+### 👎 Tradeoffs
+- Time Pressure
+- Stop on Success
+- shallow Memorization
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+ 
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/developer-meditating.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Generating Insights
+</div>
+
+
+</div>
+
+
+
+
+
+
+- Turning Observations into Insights
+- From Working to Long Term Memory
+- Validation by Sharing
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/chalkboard.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Mini Essays
+</div>
+
+
+</div>
+
+
+<div class="" style="border-radius: 15px; padding: 5px; box-sizing: border-box; position: absolute; left: 0%; top: 15%; height: 70%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+
+<div class="block">
+
+<img src="Talks/Learning Patterns/essay.excalidraw.svg" alt="" style="border-radius: 15px; width: 300px; object-fit: fill">
+
+</div>
+
+
+
+</div>
+
+<div class="" style="padding: 5px; box-sizing: border-box; position: absolute; left: 50%; top: 15%; height: 70%; width: 50%; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+
+
+
+
+
+
+
+
+### 🧩 Elements
+- Single Thought
+- 100-300 words
+- "It's important, because..."  
+
+
+### ⚒️ Tools
+- Editor + Git Repo
+- PKM (Obsidian)
+- "Learning in Public"
+
+
+
+</div>
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div>
+
+<aside class="notes"><ul>
+<li>Starting with<ul>
+<li>Opinion</li>
+<li>Experience</li>
+<li>Event</li>
+</ul>
+</li>
+<li>Example:  <a href="https://github.com/jbranchaud/til">&quot;Today I learned&quot;-Posts</a></li>
+<li>Visual Thinking as Alternative</li>
+<li>Feedback by Learning in Public</li>
+</ul>
+<blockquote>
+<p>“Clear thinking becomes clear writing; one can&#39;t exist without the other.”
+-- William Zinsser - On Writing Well</p>
+</blockquote>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/chalkboard.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Peer Discussion
+</div>
+
+
+</div>
+
+
+<div class="" style="border-radius: 15px; padding: 5px; box-sizing: border-box; position: absolute; left: 0%; top: 15%; height: 70%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+
+<div class="block">
+
+<img src="Talks/Learning Patterns/peer-discussion.excalidraw.svg" alt="" style="border-radius: 15px; width: 300px; object-fit: fill">
+
+</div>
+
+
+
+</div>
+
+<div class="" style="padding: 5px; box-sizing: border-box; position: absolute; left: 50%; top: 15%; height: 70%; width: 50%; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+
+
+
+
+
+
+
+### 🧩 Elements
+- Round Robin
+- Free Association
+- Hegelian Dialectic
+
+### ⚒️ Tools
+- Coffee Corner
+- AI Rubberduck
+- Regular's Table
+
+
+
+</div>
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div>
+
+<aside class="notes"><ul>
+<li>Demo: Chatgpt discussion</li>
+</ul>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/developer-with-mortarboard-in-front-of-computer.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Studying Software Engineering Resources
+</div>
+
+
+</div>
+
+
+
+
+
+> I would go to the library and borrow scores by all those great composers, like Stravinsky, Alban Berg, Prokofiev. I wanted to see what was going on in all of music. 
+> 
+> **Knowledge is freedom and ignorance is slavery**, and I just couldn’t believe someone could be that close to freedom and not take advantage of it.
+> 
+> -- Miles Davis
+
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/chalkboard.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Taking Notes
+</div>
+
+
+</div>
+
+
+<div class="" style="border-radius: 15px; padding: 5px; box-sizing: border-box; position: absolute; left: 0%; top: 15%; height: 70%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+
+<div class="block">
+
+<img src="Excalidraw/taking-notes.excalidraw.svg" alt="" style="border-radius: 15px; width: 300px; object-fit: fill">
+
+</div>
+
+
+
+</div>
+
+<div class="" style="padding: 5px; box-sizing: border-box; position: absolute; left: 50%; top: 15%; height: 70%; width: 50%; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+
+
+
+
+
+
+
+
+### 🧩 Elements
+- Using my own words
+- Taking Breaks to digest
+- Connect to my previous Thoughts
+
+### ⚒️ Tools
+- Reader
+- Book Database
+- Transcriptors
+
+
+</div>
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/chalkboard.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Study Group
+</div>
+
+
+</div>
+
+
+<div class="" style="border-radius: 15px; padding: 5px; box-sizing: border-box; position: absolute; left: 0%; top: 15%; height: 70%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+
+<div class="block">
+
+<img src="Talks/Learning Patterns/study-group.excalidraw.svg" alt="" style="border-radius: 15px; width: 300px; object-fit: fill">
+
+</div>
+
+
+
+</div>
+
+<div class="" style="padding: 5px; box-sizing: border-box; position: absolute; left: 50%; top: 15%; height: 70%; width: 50%; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+
+
+
+
+
+
+
+### 🧩 Elements
+- Agenda
+- Regular Meetings
+- Prepared Participants
+- Opening Question
+
+### ⚒️ Tools
+- Trending Lists
+- Lean Pub (Early Access)
+- [Pattern Language for Study Groups](https://www.industriallogic.com/papers/khdraft.pdf)
+
+
+
+</div>
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/workout.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Practice your Skills
+</div>
+
+
+</div>
+
+
+
+
+
+
+> Knowledge is not skill. Knowledge plus ten thousand times is skill.
+> 
+> -- Shinichi Suzuki
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/chalkboard.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Dojo
+</div>
+
+
+</div>
+
+
+<div class="" style="border-radius: 15px; padding: 5px; box-sizing: border-box; position: absolute; left: 0%; top: 15%; height: 70%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+
+<div class="block">
+
+<img src="Talks/Learning Patterns/dojo.excalidraw.svg" alt="" style="border-radius: 15px; width: 300px; object-fit: fill">
+
+</div>
+
+
+
+</div>
+
+<div class="" style="padding: 5px; box-sizing: border-box; position: absolute; left: 50%; top: 15%; height: 70%; width: 50%; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+
+
+
+
+
+
+
+### 🧩 Elements
+- separated Training
+- reduced cognitive Load
+- Variability
+
+### ⚒️ Tools
+- Breakable Toys
+- Mentors
+- Fixed Training Slots (X+1)
+
+
+</div>
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/chalkboard.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Combining Practices
+</div>
+
+
+</div>
+
+
+
+
+
+<img src="Talks/Learning Patterns/learning-loop.excalidraw.svg" alt="" style="object-fit: scale-down">
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/chalkboard.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Example Loop Run
+</div>
+
+
+</div>
+
+
+
+
+
+<img src="Talks/Learning Patterns/learning-loop-example.excalidraw.svg" alt="" style="object-fit: scale-down">
+
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/chalkboard.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## A Learning Morning Routine
+</div>
+
+
+</div>
+
+
+
+
+
+>One technique we use to maintain this balance is something we call **the 20-minute rule**. The idea [...] is to devote at least 20 minutes a day to your career as an architect by learning something new or diving deeper into a specific topic.
+>-- Fundamentals of Software Architecture
+
+
+<div class="block">
+
+✅  Triage of Readwise Inbox<!-- .element: style="text-align: left" class="fragment" -->
+
+✅ Read an Article or Book Chapter<!-- .element: style="text-align: left" class="fragment" -->
+
+✅ Refine Notes<!-- .element: style="text-align: left" class="fragment" -->
+</div>
+
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/developer-at-buffet.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Variability
+</div>
+
+
+</div>
+
+
+
+
+
+
+> One of the primary risks for someone who learns quickly is becoming a **big fish in a small pond**. [...], it is critical for the big fish to be aware of other ponds within the vast global network of ponds, and more importantly, the **existence of enormous fish**, fish that even exceed the size of your little pond.
+> 
+> -- Dave Hoover, Adewale Oshineyes - Apprenticeship Patterns
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/chalkboard.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Changing Work Environment
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<img src="Talks/Learning Patterns/learning-variability.excalidraw.svg" alt="" style="object-fit: scale-down">
+
+
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div>
+
+<aside class="notes"><ul>
+<li><p>Skill Matrix</p>
+</li>
+<li><p>Roles</p>
+<ul>
+<li>Admin: Finding Edge Cases</li>
+<li>PO/PL: Audience related Communication</li>
+<li>SM: YAGNI Processes</li>
+</ul>
+</li>
+<li><p>Paradigms</p>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/chalkboard.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Paradigm Shift
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<img src="Talks/Learning Patterns/paradign-shift.excalidraw.svg" alt="" style="object-fit: scale-down">
+
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div>
+
+<aside class="notes"><ul>
+<li>OOP -&gt; Functional</li>
+<li>Static Typed Language -&gt; Data Oriented Programming</li>
+<li>Snapshot Persistence -&gt; Event Sourcing</li>
+</ul>
+</aside></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/developer-at-campfire.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Sharing
+</div>
+
+
+</div>
+
+
+
+
+
+
+> If you want to master something, teach it.
+> 
+> -- Richard Feynman
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div>
+
+<aside class="notes"><p>His key learning insight: complexity and jargon often mask a lack of understanding.</p>
+<p>Feynman’s learning technique comprises four key steps:</p>
+<ol>
+<li>Select a concept to learn.</li>
+<li>Teach it to a child.</li>
+<li>Review and refine your understanding.</li>
+<li>Organize your notes and revisit them regularly.</li>
+</ol>
+</aside></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/chalkboard.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Working out Loud
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<img src="Talks/Learning Patterns/learning-sharing.excalidraw.svg" alt="" style="object-fit: scale-down">
+
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/chalkboard.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Abstracts
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<img src="Talks/Learning Patterns/talk-abstract-manual.excalidraw.svg" alt="" style="width: 800px; object-fit: fill">
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/chalkboard.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Training from the back of the room
+</div>
+
+
+</div>
+
+
+
+
+
+
+<img src="Talks/Learning Patterns/workshop-manual.excalidraw.svg" alt="" style="width: 800px; object-fit: fill">
+
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/chalkboard.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Publication Tools
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<img src="Talks/Learning Patterns/publishing-tools.excalidraw.svg" alt="" style="object-fit: scale-down">
+
+
+
+
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="Midjourney/bruce-lee-dojo.png" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 670px; width: 1200px; min-height: 670px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="padding: 0 20px; box-sizing: border-box; position: absolute; left: 0%; top: 0%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ <div class="block">
+
+## Deep Learning
+</div>
+
+
+</div>
+
+
+
+
+
+
+> **Before I studied the art**, a punch to me was just like a punch, a kick just like a kick. 
+>  
+>  **After I learned the art**, a punch was no longer a punch, a kick no longer a kick.
+>   
+**Now that I've understood the art**, a punch is just like a punch, a kick just like a kick. 
+> 
+> -- Bruce Lee
+
+<div class="" style="color: #03bafc; border-top: 2px dashed #fff; padding: 0 0 0 10px; box-sizing: border-box; position: absolute; left: 0%; top: 90%; height: 10%; width: 100%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+agiledojo.de
+</div>
+</div></script></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/chart/chart.min.js"></script>
+	<script src="plugin/chart/plugin.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+	  function isLight(color) {
+		let hex = color.replace('#', '');
+
+		// convert #fff => #ffffff
+		if(hex.length == 3){
+			hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+		}
+
+		const c_r = parseInt(hex.substr(0, 2), 16);
+		const c_g = parseInt(hex.substr(2, 2), 16);
+		const c_b = parseInt(hex.substr(4, 2), 16);
+		const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
+		return brightness > 155;
+	}
+
+	var bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
+	var isLight = isLight(bgColor);
+
+	if(isLight){
+		document.body.classList.add('has-light-background');
+	} else {
+		document.body.classList.add('has-dark-background');
+	}
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealChart,
+		  RevealCustomControls,
+        ],
+
+
+    	allottedTime: 120 * 1000,
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+		markdown: {
+		  gfm: true,
+		  mangle: true,
+		  pedantic: false,
+		  smartLists: false,
+		  smartypants: false,
+		},
+
+		mermaid: {
+			theme: isLight ? 'default' : 'dark',
+		},
+
+		customcontrols: {
+			controls: [
+			]
+		},
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":"1200","height":"670","margin":0.04,"controls":true,"progress":true,"slideNumber":false,"transition":"convex","transitionSpeed":"default"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+
+  <!-- created with Advanced Slides -->
+</html>
