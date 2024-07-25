@@ -57,6 +57,14 @@ bigimg: /self-organized-learning/talk/Midjourney/developer-before-chalkbard.png
 
 [Free Your Inner Nonfiction Writer](https://www.goodreads.com/book/show/60912271-free-your-inner-nonfiction-writer?from_search=true&from_srp=true&qid=rVX6m8OrSt&rank=1): How to start writing
 
+## Bonus Material
 
+[Growth Framework from Medium](https://medium.com/s/engineering-growth-framework/engineering-growth-introduction-8ba7b78c8d6c): A Software Engineering Career Model
+
+[The Staff Engineer's Path: A Guide for Individual Contributors Navigating Growth and Change](https://www.goodreads.com/book/show/61058107-the-staff-engineer-s-path?from_search=true&from_srp=true&qid=5G1Bx9sHQJ&rank=2): Google Career Model
+
+[Slow Productivity: The Lost Art of Accomplishment Without Burnout](https://www.goodreads.com/book/show/197773418-slow-productivity?ref=nav_sb_ss_1_17): How to escape busyness for sustainable productivity
+
+[Make it stick](https://youtube.com/watch?v=mJJCfvBqlHk&si=AAEaV4ZPxVUZ5u-A): A video summary about principles to memorize new knowledge
 
 
