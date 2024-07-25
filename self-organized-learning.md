@@ -55,6 +55,8 @@ bigimg: /self-organized-learning/talk/Midjourney/developer-before-chalkbard.png
 
 [Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman](https://www.goodreads.com/book/show/5608045-apprenticeship-patterns?from_search=true&from_srp=true&qid=OWfmI0Ohox&rank=1): Patttern to master Software Crafting
 
+[Working Out Loud: For a better career and life](https://www.goodreads.com/book/show/25800993-working-out-loud?from_search=true&from_srp=true&qid=JC8jZqpulO&rank=1): Learning and Sharing in Public
+
 [Free Your Inner Nonfiction Writer](https://www.goodreads.com/book/show/60912271-free-your-inner-nonfiction-writer?from_search=true&from_srp=true&qid=rVX6m8OrSt&rank=1): How to start writing
 
 ## Bonus Material
