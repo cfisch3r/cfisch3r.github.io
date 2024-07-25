@@ -5,9 +5,11 @@ subtitle: Ressources
 bigimg: /self-organized-learning/talk/Midjourney/developer-before-chalkbard.png
 ---
 
-## Intro
+## Material
 
 [Slides](talk/index.html)
+
+[Article](/2024-06-23-boost-your-skills/)
 
 ## Mini Essays
 
