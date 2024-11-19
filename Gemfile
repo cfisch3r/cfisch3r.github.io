@@ -10,3 +10,5 @@ group :jekyll_plugins do
 end
 gem 'jekyll-twitter-plugin'
 gem 'kramdown-parser-gfm'
+gem 'csv'
+gem 'base64'
