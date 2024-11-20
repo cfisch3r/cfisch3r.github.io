@@ -5,7 +5,7 @@ subtitle: "A Risk based Approach"
 category: "Software Architecture"
 ref: riskbasedquality
 description: "A Risk Based Appraoch to Quality Storming"
-fb-img: /images/originals/posts/risk-quality-storming.png
+fb-img: /images/originals/posts/risk-quality-storming-fb.png
 bigimg: /images/originals/posts/developers-in-war-room.png
 ---
 
@@ -22,16 +22,16 @@ They are the de facto standard for this task because of these unique features:
 - They revolve around **observable behavior**, providing a tangible, measurable aspect.
 - They come with **explicit success criteria**, allowing you to easily ascertain whether your requirement has been accurately met.
 
-{% include admonition.html type="example" title="A Quality Scenario Example" body="Consider an online banking system that needs to maintain high performance during peak usage hours (say, between 11 AM -2 PM). Here, the related quality attribute is 'Performance.' However, just focusing on improving performance doesn't provide a concrete action plan. Now let's turn this into a quality scenario: <br><br><i>During peak usage hours (11 AM -2 PM), the system should be able to handle up to 10,000 users simultaneously without slowing down response time below two seconds.</i><br><br>
+{% include admonition.html type="example" title="A Quality Scenario Example" body="Consider an online banking system that needs to maintain high performance during peak usage hours (say, between 11 AM -2 PM). Here, the related quality attribute is 'Performance.' However, just focusing on improving performance doesn't provide a concrete action plan. Now let's turn this into a quality scenario: <br><br><i>During peak usage hours (11 AM -2 PM), the system should be able to handle up to 10,000 parallel requests from users performing transactions with a response time below two seconds.</i><br><br>
 
 In this scenario, we have specified: 
 <ul>
-<li><b>The source of stimulus</b>: Peak usage hours/High number of users.</li>
-<li><b>The stimulus</b>: High load on the system.</li>
+<li><b>The source of stimulus</b>: The Users.</li>
+<li><b>The stimulus</b>: 10,000 parallel request.</li>
 <li><b>The artifact</b>: The online banking system.</li>
 <li><b>The environment</b>: During peak hours.</li>
-<li><b>The response</b>: Maintaining response time below two seconds.</li>
-<li><b>The response measure</b>: Number of simultaneous users  that can be handled without affecting performance.</li>
+<li><b>The response</b>: performing transactions with a response time</li>
+<li><b>The response measure</b>: below 2 seconds</li>
 </ul>
 
  By turning the attribute into a scenario, the team can focus on specific, measurable goals and plan actions to achieve them. They can also identify potential risks (like server overload) and devise strategies to mitigate them. This is more effective than just focusing on improving 'Performance,' which is a broad and vague goal." %}
@@ -145,8 +145,8 @@ So, which workshop format should you use for our development project?
 
 The **conventional Quality Storming** begins its journey with a quality model. It is focused on the problem we aim to solve with the software product. Therefore a strong involvement of the stakeholder is crucial to its success.
 
-On the flip side, the **risk based Quality Storming** starts with a model of stereotypical risks. It utilizes the existing product architecture, which calls for a strong involvement of the development team. Both approaches offer unique perspectives on our software product's quality scenarios. 
+On the flip side, the **risk based Quality Storming** starts with a model of stereotypical risks. It utilizes the existing product architecture, which calls for a strong involvement of the development team. 
 
-So, why choose one over the other when we can harness the power of both? I propose that we combine both methods to gain a holistic, 360-degree view of our quality requirements.
+Both approaches offer different perspectives on our software product's quality scenarios. So, I like to combine both methods to gain a holistic, 360-degree view of our quality requirements.
 
 
