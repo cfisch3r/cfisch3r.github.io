@@ -33,6 +33,9 @@ jobs:
           ruby-version: 3.4
           bundler-cache: true
 
+      - name: Install Imagemagick
+        run: sudo apt-get -y install imagemagick
+
       - name: Build Ruby assets
 # uncomment the following lines if you want to add environment variables for this step
 #        env:
