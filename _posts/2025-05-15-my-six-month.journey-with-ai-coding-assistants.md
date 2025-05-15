@@ -13,6 +13,8 @@ Like many software engineers, I've spent the last six months embracing AI coding
 
 Six months later, I'm sharing my unfiltered experience - both the impressive wins and the frustrating challenges that are rarely discussed in the glowing case studies published by AI providers.
 
+<!--more-->
+
 ## The Mixed Reality of AI Coding Tools
 
 While success stories abound in marketing materials (with GitHub [reporting productivity increases of up to 55%](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/) in controlled studies), my on-the-ground experience has been more nuanced. The benefits are real, but they come with significant limitations that aren't mentioned in promotional literature.
