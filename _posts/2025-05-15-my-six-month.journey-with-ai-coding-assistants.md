@@ -5,7 +5,7 @@ subtitle: "My Six-Month Journey with AI Coding Assistants"
 category: "AI"
 ref: aicodingassistant
 description: "An interim report on the real-world experiences of integrating AI into software development workflows"
-fb-img: /images/originals/posts/risk-quality-storming-fb.png
+fb-img: /images/originals/posts/ai-coding-assistant-fb.png
 bigimg: /images/originals/posts/ai-coding-assistant-fb.png
 ---
 
