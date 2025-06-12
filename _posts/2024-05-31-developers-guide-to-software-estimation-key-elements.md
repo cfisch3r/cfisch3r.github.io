@@ -93,4 +93,4 @@ Instead of you making the decision for the stakeholders by providing just one of
 
 It has been shown that providing a single value as an estimation is not sufficient. In order to provide stakeholders with all information about risks, we must provide all of the key elements of an estimation: **the minimum, the expected value, the confidence interval, and the maximum**. A realistic distribution function and the cone of uncertainty must be respected to determine them reliably.
 
-Now that we understand how estimations work, let's examine how they are used in practice in the last part of this article series. Stay tuned!
+Now that we understand how estimations work, let's examine how they are used in practice in the [final part]({% post_url 2025-06-12-developers-guide-to-software-estimation-practical-methods %}) of this article series.
